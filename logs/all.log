@@ -1469,3 +1469,711 @@ ValueError: invalid literal for int() with base 10: '”√¿˝_quant_login_out(µ«»Îµ«
 2018-09-27 15:34:11,663 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/8/ HTTP/1.1" 200 51071
 2018-09-27 15:34:14,816 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
 2018-09-27 15:34:22,731 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 81092
+2018-09-27 18:58:47,429 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-27 18:58:47,432 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2365
+2018-09-27 18:58:55,107 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-09-27 18:58:55,141 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 304 0
+2018-09-27 19:00:31,853 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8544
+2018-09-27 19:00:31,904 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 304 0
+2018-09-27 19:06:18,482 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8560
+2018-09-27 19:06:18,522 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20062
+2018-09-27 19:06:18,530 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:06:18,545 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:06:18,547 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:06:18,548 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:06:18,549 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:06:18,596 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:06:18,598 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:06:23,069 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8560
+2018-09-27 19:06:23,128 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:06:23,142 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20062
+2018-09-27 19:06:23,142 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:06:23,146 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:06:23,148 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:06:23,149 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:06:23,195 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:06:23,198 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:06:25,155 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8560
+2018-09-27 19:06:25,230 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:06:25,232 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:06:25,242 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:06:25,252 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:06:25,254 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:06:25,256 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20062
+2018-09-27 19:06:25,312 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:06:25,316 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:06:26,823 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8560
+2018-09-27 19:06:26,865 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20062
+2018-09-27 19:06:26,868 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:06:26,874 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:06:26,875 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:06:26,875 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:06:26,878 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:06:27,010 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:06:27,013 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:08:15,998 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8567
+2018-09-27 19:08:16,056 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:08:16,063 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20062
+2018-09-27 19:08:16,076 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:08:16,077 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:08:16,078 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:08:16,078 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:08:16,150 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:08:16,151 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:10:43,636 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8567
+2018-09-27 19:10:43,696 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20066
+2018-09-27 19:10:43,710 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:10:43,718 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:10:43,721 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:10:43,724 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:10:43,733 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:10:43,774 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:10:43,778 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:10:46,780 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8567
+2018-09-27 19:10:46,848 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:10:46,854 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:10:46,863 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:10:46,868 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20066
+2018-09-27 19:10:46,875 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:10:46,879 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:10:47,033 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:10:47,034 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:11:50,851 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8567
+2018-09-27 19:11:50,890 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20066
+2018-09-27 19:11:50,905 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:11:50,909 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:11:50,910 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:11:50,911 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:11:50,912 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:11:51,037 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:11:51,039 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:11:54,045 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8567
+2018-09-27 19:11:54,108 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:11:54,111 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20066
+2018-09-27 19:11:54,112 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:11:54,127 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:11:54,130 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:11:54,135 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:11:54,279 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:11:54,281 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:13:44,037 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8542
+2018-09-27 19:13:44,111 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 23890
+2018-09-27 19:13:44,115 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/wow.min.js HTTP/1.1" 200 6299
+2018-09-27 19:13:44,121 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/jquery.sticky.js HTTP/1.1" 200 6965
+2018-09-27 19:13:44,122 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20066
+2018-09-27 19:13:44,125 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/custom.js HTTP/1.1" 200 5770
+2018-09-27 19:13:44,127 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/logo.png HTTP/1.1" 200 11481
+2018-09-27 19:13:44,262 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/loading.GIF HTTP/1.1" 200 63798
+2018-09-27 19:13:44,264 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-27 19:14:51,372 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8542
+2018-09-27 19:14:51,402 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20088
+2018-09-27 19:14:51,630 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-27 19:14:51,640 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-27 19:14:54,581 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8542
+2018-09-27 19:14:54,612 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 304 0
+2018-09-27 19:14:54,711 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-27 19:14:54,748 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-27 19:15:07,021 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8542
+2018-09-27 19:15:07,047 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20092
+2018-09-27 19:15:07,219 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-27 19:15:07,247 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-27 19:15:19,557 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/register/ HTTP/1.1" 200 8542
+2018-09-27 19:15:19,611 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/css-index.css HTTP/1.1" 200 20092
+2018-09-27 19:15:19,751 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-27 19:15:19,759 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-27 19:22:54,794 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3971
+2018-09-27 19:22:54,867 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 3971
+2018-09-28 10:52:51,819 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin HTTP/1.1" 200 3971
+2018-09-28 10:52:51,896 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 304 0
+2018-09-28 10:52:51,961 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 3971
+2018-09-28 10:52:56,010 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin HTTP/1.1" 200 3971
+2018-09-28 10:52:56,078 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 3971
+2018-09-28 10:53:01,121 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 3971
+2018-09-28 10:53:01,215 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 3971
+2018-09-28 10:53:03,773 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 3971
+2018-09-28 10:53:03,833 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 3971
+2018-09-28 10:54:16,046 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:54:16,350 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 92060
+2018-09-28 10:54:16,639 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 200 3971
+2018-09-28 10:54:54,853 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:54:55,167 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 92060
+2018-09-28 10:54:55,330 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 10:54:55,342 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 10:55:40,207 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:55:40,301 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 92060
+2018-09-28 10:55:40,618 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 10:55:40,625 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 10:55:47,664 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 10:55:47,665 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2476
+2018-09-28 10:56:10,218 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 10:56:10,219 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2477
+2018-09-28 10:56:10,266 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 10:56:10,280 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 10:56:22,981 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:56:23,326 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 91925
+2018-09-28 10:57:43,411 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 10:57:43,413 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2365
+2018-09-28 10:57:50,932 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:57:51,180 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 91926
+2018-09-28 11:04:07,519 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:04:07,523 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2365
+2018-09-28 11:04:07,553 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 11:04:07,566 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 11:04:13,205 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:04:13,571 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 81421
+2018-09-28 11:05:29,630 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:05:29,981 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 81556
+2018-09-28 11:05:30,170 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 11:05:30,179 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 11:05:36,712 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:05:36,713 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2365
+2018-09-28 11:05:43,637 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:05:43,739 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 81550
+2018-09-28 11:05:48,612 [django.request:93] [base:get_response] [WARNING]- Not Found: /axadmin
+2018-09-28 11:05:48,613 [django.server:124] [basehttp:log_message] [WARNING]- "GET /axadmin HTTP/1.1" 404 2404
+2018-09-28 11:05:55,193 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 11:05:55,194 [django.server:124] [basehttp:log_message] [WARNING]- "GET /xadmin HTTP/1.1" 404 2401
+2018-09-28 11:06:25,851 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:06:25,852 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2365
+2018-09-28 11:06:52,381 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:06:52,383 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2366
+2018-09-28 11:06:52,409 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 11:06:52,416 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 11:09:02,773 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:09:02,775 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2366
+2018-09-28 11:09:02,805 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 11:09:02,821 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 11:09:07,645 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 11:09:07,878 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 92377
+2018-09-28 11:10:51,950 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:10:52,291 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 81556
+2018-09-28 11:10:52,520 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 11:10:52,530 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 11:12:09,508 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 23, in process_request
+    ) % ("_CLASSES" if settings.MIDDLEWARE is None else "")
+AssertionError: The Django authentication middleware requires session middleware to be installed. Edit your MIDDLEWARE setting to insert 'django.contrib.sessions.middleware.SessionMiddleware' before 'django.contrib.auth.middleware.AuthenticationMiddleware'.
+2018-09-28 11:12:09,696 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 63799
+2018-09-28 11:12:09,858 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 23, in process_request
+    ) % ("_CLASSES" if settings.MIDDLEWARE is None else "")
+AssertionError: The Django authentication middleware requires session middleware to be installed. Edit your MIDDLEWARE setting to insert 'django.contrib.sessions.middleware.SessionMiddleware' before 'django.contrib.auth.middleware.AuthenticationMiddleware'.
+2018-09-28 11:12:09,921 [django.server:124] [basehttp:log_message] [ERROR]- "GET /favicon.ico HTTP/1.1" 500 63930
+2018-09-28 12:14:19,913 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 12:14:19,915 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2366
+2018-09-28 12:14:19,990 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 12:14:19,999 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 12:14:25,925 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 12:14:26,183 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 92505
+2018-09-28 12:14:54,806 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 12:14:55,040 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 81555
+2018-09-28 12:14:55,294 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 12:14:55,302 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 12:16:41,821 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 12:16:41,823 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2366
+2018-09-28 12:16:47,931 [django.request:93] [base:get_response] [WARNING]- Not Found: /admin
+2018-09-28 12:16:47,933 [django.server:124] [basehttp:log_message] [WARNING]- "GET /admin HTTP/1.1" 404 2399
+2018-09-28 12:16:52,983 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 12:16:52,984 [django.server:124] [basehttp:log_message] [WARNING]- "GET /xadmin HTTP/1.1" 404 2402
+2018-09-28 12:16:58,526 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 12:16:58,527 [django.server:124] [basehttp:log_message] [WARNING]- "GET /xadmin HTTP/1.1" 404 2402
+2018-09-28 12:16:58,556 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 12:16:58,568 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 12:17:02,359 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 12:17:02,360 [django.server:124] [basehttp:log_message] [WARNING]- "GET /xadmin HTTP/1.1" 404 2402
+2018-09-28 12:17:02,391 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 12:17:02,402 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 12:17:13,464 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 12:17:13,778 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 81420
+2018-09-28 12:18:05,011 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 12:18:05,291 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 92512
+2018-09-28 12:18:05,485 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 12:18:05,496 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 12:24:41,815 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+2018-09-28 12:24:42,045 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 85101
+2018-09-28 12:24:42,382 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 12:24:42,390 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 12:25:15,263 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login HTTP/1.1" 301 0
+2018-09-28 12:25:15,290 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-09-28 12:25:26,839 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-09-28 12:25:26,956 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-09-28 12:25:36,035 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+2018-09-28 12:25:36,189 [django.server:124] [basehttp:log_message] [ERROR]- "GET /xadmin/ HTTP/1.1" 500 85311
+2018-09-28 12:31:18,697 [django.server:124] [basehttp:log_message] [INFO]- "GET /admin HTTP/1.1" 301 0
+2018-09-28 12:31:18,828 [django.server:124] [basehttp:log_message] [INFO]- "GET /admin/ HTTP/1.1" 302 0
+2018-09-28 12:31:19,044 [django.server:124] [basehttp:log_message] [INFO]- "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1874
+2018-09-28 12:31:19,078 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/css/base.css HTTP/1.1" 200 16106
+2018-09-28 12:31:19,079 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+2018-09-28 12:31:19,081 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/css/responsive.css HTTP/1.1" 200 17894
+2018-09-28 12:31:19,090 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2018-09-28 12:31:19,106 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+2018-09-28 12:31:19,108 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+2018-09-28 12:31:19,300 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 14:24:00,763 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 4163
+2018-09-28 14:24:00,795 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 14:24:00,801 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 14:24:01,913 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 4163
+2018-09-28 14:24:01,997 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 14:24:02,008 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 14:24:02,012 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 14:24:02,022 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 14:24:02,037 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-28 14:24:02,042 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-28 14:24:02,043 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-28 14:24:02,045 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-28 14:24:02,052 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-28 14:24:02,076 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 4170
+2018-09-28 14:24:02,080 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-28 14:24:02,081 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-28 14:24:02,081 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-28 14:24:02,172 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 14:25:41,569 [django.server:124] [basehttp:log_message] [INFO]- "POST /xadmin/ HTTP/1.1" 302 0
+2018-09-28 14:25:41,644 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 12302
+2018-09-28 14:25:41,694 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+2018-09-28 14:25:41,704 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+2018-09-28 14:25:41,704 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+2018-09-28 14:25:41,726 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 14:58:49,496 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 12302
+2018-09-28 14:58:49,560 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 14:58:49,575 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 14:58:49,588 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 14:58:49,594 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 14:58:49,596 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 14:58:49,607 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 14:58:49,617 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+2018-09-28 14:58:49,632 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-28 14:58:49,653 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-28 14:58:49,656 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-28 14:58:49,657 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-28 14:58:49,660 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-28 14:58:49,684 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-28 14:58:49,686 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-28 14:58:49,689 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-28 14:58:49,694 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+2018-09-28 14:58:49,694 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+2018-09-28 14:58:49,701 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 14:58:49,875 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 14:58:50,154 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 14:58:50,167 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 14:58:55,315 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 12302
+2018-09-28 14:58:55,364 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 14:58:55,517 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-09-28 14:58:55,527 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-09-28 15:05:49,552 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/userinfo/ HTTP/1.1" 200 30893
+2018-09-28 15:05:49,605 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 15:05:49,619 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 15:05:49,631 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 15:05:49,636 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 15:05:49,636 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 15:05:49,640 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 15:05:49,641 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3569
+2018-09-28 15:05:49,656 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 15:05:49,658 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-28 15:05:49,678 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-28 15:05:49,679 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-28 15:05:49,684 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-28 15:05:49,684 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-28 15:05:49,684 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-28 15:05:49,685 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-28 15:05:49,698 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+2018-09-28 15:05:49,703 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+2018-09-28 15:05:49,707 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+2018-09-28 15:05:49,712 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+2018-09-28 15:05:49,714 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+2018-09-28 15:05:49,716 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+2018-09-28 15:05:49,717 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-28 15:05:49,895 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 15:05:55,668 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/projectinfo/ HTTP/1.1" 200 34890
+2018-09-28 15:05:55,738 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 15:05:55,744 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 15:05:55,752 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 15:05:55,762 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 15:05:55,769 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 15:05:55,790 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 15:05:55,793 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3569
+2018-09-28 15:05:55,804 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-28 15:05:55,804 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-28 15:05:55,806 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-28 15:05:55,815 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 15:05:55,821 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-28 15:05:55,825 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-28 15:05:55,838 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-28 15:05:55,839 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-28 15:05:55,855 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+2018-09-28 15:05:55,857 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-28 15:05:55,862 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+2018-09-28 15:05:55,869 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+2018-09-28 15:05:55,870 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+2018-09-28 15:05:55,870 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+2018-09-28 15:05:55,904 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+2018-09-28 15:05:56,088 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 15:06:00,877 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/moduleinfo/ HTTP/1.1" 200 33140
+2018-09-28 15:06:00,937 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 15:06:00,948 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 15:06:00,957 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 15:06:00,958 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 15:06:00,959 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 15:06:00,964 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 15:06:00,988 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3569
+2018-09-28 15:06:00,995 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-28 15:06:01,000 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-28 15:06:01,014 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-28 15:06:01,017 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 15:06:01,018 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-28 15:06:01,023 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-28 15:06:01,025 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+2018-09-28 15:06:01,025 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-28 15:06:01,041 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+2018-09-28 15:06:01,043 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+2018-09-28 15:06:01,047 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-28 15:06:01,050 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-28 15:06:01,055 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+2018-09-28 15:06:01,055 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+2018-09-28 15:06:01,058 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+2018-09-28 15:06:01,255 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 15:06:06,207 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/testcaseinfo/ HTTP/1.1" 200 45493
+2018-09-28 15:06:06,270 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 15:06:06,278 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 15:06:06,279 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 15:06:06,280 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 15:06:06,282 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 15:06:06,313 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-28 15:06:06,323 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3569
+2018-09-28 15:06:06,339 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+2018-09-28 15:06:06,342 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-28 15:06:06,343 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-28 15:06:06,343 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-28 15:06:06,344 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+2018-09-28 15:06:06,347 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 15:06:06,378 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+2018-09-28 15:06:06,381 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-28 15:06:06,384 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-28 15:06:06,389 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-28 15:06:06,392 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-28 15:06:06,401 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+2018-09-28 15:06:06,404 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+2018-09-28 15:06:06,406 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 15:06:06,409 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+2018-09-28 15:06:06,676 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 15:06:12,886 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/envinfo/ HTTP/1.1" 200 30302
+2018-09-28 15:06:12,924 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 15:06:12,935 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 15:06:12,951 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 15:06:12,957 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 15:06:12,958 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 15:06:12,969 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3569
+2018-09-28 15:06:12,967 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-28 15:06:12,967 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 15:06:12,988 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-28 15:06:12,988 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-28 15:06:12,996 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-28 15:06:12,998 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+2018-09-28 15:06:13,000 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-28 15:06:13,005 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+2018-09-28 15:06:13,025 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+2018-09-28 15:06:13,026 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+2018-09-28 15:06:13,051 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-28 15:06:13,054 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-28 15:06:13,055 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+2018-09-28 15:06:13,058 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-28 15:06:13,061 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+2018-09-28 15:06:13,066 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-28 15:06:13,229 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160

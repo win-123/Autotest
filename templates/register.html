@@ -13,6 +13,9 @@
     <link href="https://cdn.bootcss.com/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet">
 
     <style>
+        body{
+            background: url({% static "assets/img/bg.jpeg" %}) no-repeat;
+        }
         .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
             color: limegreen;
         }
@@ -20,18 +23,16 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navbar-scroll" >
+<!-- <body data-spy="scroll" data-target="#navbar-scroll" > -->
+<body>
+    <div class="fullscreen landing parallax">
     <!-- 加载效果图 -->
     <div id="preloader" style="background: #fff url({% static "assets/img/loading.GIF" %}) no-repeat center center;"></div>
-    <div id="top"></div>
-
-    <div class="fullscreen landing parallax" style="background-image:url({% static "assets/img/bg.jpeg" %}); background-size: 100% 100%; background-repeat: no-repeat">
-
+<!--     <div id="top"></div> -->
         <div class="overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-
                         <!-- /.logo -->
                         <div class="logo wow fadeInDown">
                             <a href="">
@@ -47,7 +48,7 @@
                         <!-- /.header paragraph -->
                         <div class="landing-text wow fadeInUp">
                             <p>
-                                路飞学城, 专注改变生活
+                                路飞学城, 智慧改变生活
                             </p>
                         </div>
 

@@ -5,21 +5,56 @@ import shutil
 import sys
 
 import paramiko
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse, StreamingHttpResponse
+from django.http import (
+    HttpResponse,
+    HttpResponseRedirect,
+    JsonResponse,
+    StreamingHttpResponse
+)
 from django.shortcuts import render_to_response
 from django.utils.safestring import mark_safe
 from djcelery.models import PeriodicTask
 from dwebsocket import accept_websocket
 
 from ApiManager import separator
-from ApiManager.models import ProjectInfo, ModuleInfo, TestCaseInfo, UserInfo, EnvInfo, TestReports, DebugTalk, \
+from ApiManager.models import (
+    ProjectInfo,
+    ModuleInfo,
+    TestCaseInfo,
+    UserInfo,
+    EnvInfo,
+    TestReports,
+    DebugTalk,
     TestSuite
+)
 from ApiManager.tasks import main_hrun
-from ApiManager.utils.common import module_info_logic, project_info_logic, case_info_logic, config_info_logic, \
-    set_filter_session, get_ajax_msg, register_info_logic, task_logic, load_modules, upload_file_logic, \
-    init_filter_session, get_total_values, timestamp_to_datetime
-from ApiManager.utils.operation import env_data_logic, del_module_data, del_project_data, del_test_data, copy_test_data, \
-    del_report_data, add_suite_data, copy_suite_data, del_suite_data, edit_suite_data
+from ApiManager.utils.common import (
+    module_info_logic,
+    project_info_logic,
+    case_info_logic,
+    config_info_logic,
+    set_filter_session,
+    get_ajax_msg,
+    register_info_logic,
+    task_logic,
+    load_modules,
+    upload_file_logic,
+    init_filter_session,
+    get_total_values,
+    timestamp_to_datetime
+)
+from ApiManager.utils.operation import (
+    env_data_logic,
+    del_module_data,
+    del_project_data,
+    del_test_data,
+    copy_test_data,
+    del_report_data,
+    add_suite_data,
+    copy_suite_data,
+    del_suite_data,
+    edit_suite_data
+)
 from ApiManager.utils.pagination import get_pager_info
 from ApiManager.utils.runner import run_by_batch, run_test_by_type
 from ApiManager.utils.task_opt import delete_task, change_task_status
@@ -31,7 +66,7 @@ logger = logging.getLogger('HttpRunnerManager')
 # Create your views here.
 
 
-# 检查是否登录的装饰器
+# 登录装饰器
 def login_check(func):
     def wrapper(request, *args, **kwargs):
         if not request.session.get('login_status'):
@@ -276,7 +311,7 @@ def run_batch_test(request):
         runner.run(testcase_dir_path)
 
         shutil.rmtree(testcase_dir_path)
-        runner.summary = timestamp_to_datetime(runner.summary,type=False)
+        runner.summary = timestamp_to_datetime(runner.summary, type=False)
 
         return render_to_response('report_template.html', runner.summary)
 

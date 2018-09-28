@@ -91,9 +91,9 @@ a:hover {
 .fullscreen {
     width: 100%;
     min-height: 100%;
-    background-repeat: no-repeat;
+/*    background-repeat: no-repeat;
     background-position: 100% 100%;
-    background-position: 100% 100%  !important;
+    background-position: 100% 100%  !important;*/
 }
 
 .overlay {
@@ -235,7 +235,7 @@ a:hover {
 }
 
 .head-btn {
-    margin-bottom: 150px;
+    margin-top: 150px
 }
 
 .option {

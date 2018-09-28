@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 from __future__ import absolute_import, unicode_literals
 
 import os
+import sys 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import djcelery
@@ -21,6 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
+
+# 为额外添加的app设置起始路径
+sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=w+1if4no=o&6!la#5j)3wsu%k@$)6bf+@3=i0h!5)h9h)$*s7'
@@ -42,21 +46,36 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ApiManager',
     'djcelery',
-]
+    'xadmin',
+    'crispy_forms',
+    'DjangoUeditor',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 MIDDLEWARE_CLASSES = [
-    'dwebsocket.middleware.WebSocketMiddleware'
+    'django.middleware.security.SecurityMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# MIDDLEWARE_CLASSES = [
+#     'dwebsocket.middleware.WebSocketMiddleware'
+# ]
 
 ROOT_URLCONF = 'HttpRunnerManager.urls'
 

@@ -451,3 +451,343 @@ ValueError: invalid literal for int() with base 10: '”√¿˝_quant_login_out(µ«»Îµ«
 2018-09-27 14:29:43,967 [django.request:93] [base:get_response] [WARNING]- Not Found: /
 2018-09-27 14:50:38,602 [HttpRunnerManager:54] [views:login] [INFO]- root ÁôªÂΩïÊàêÂäü
 2018-09-27 15:33:50,230 [HttpRunnerManager:54] [views:login] [INFO]- root ÁôªÂΩïÊàêÂäü
+2018-09-27 18:58:47,429 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 10:54:16,046 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:54:54,853 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:55:40,207 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:55:47,664 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 10:56:10,218 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 10:56:22,981 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 10:57:43,411 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 10:57:50,932 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 11:04:07,519 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:04:13,205 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:05:29,630 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:05:36,712 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:05:43,637 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:05:48,612 [django.request:93] [base:get_response] [WARNING]- Not Found: /axadmin
+2018-09-28 11:05:55,193 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 11:06:25,851 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:06:52,381 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:09:02,773 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 11:09:07,645 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 11:10:51,950 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 11:12:09,508 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 23, in process_request
+    ) % ("_CLASSES" if settings.MIDDLEWARE is None else "")
+AssertionError: The Django authentication middleware requires session middleware to be installed. Edit your MIDDLEWARE setting to insert 'django.contrib.sessions.middleware.SessionMiddleware' before 'django.contrib.auth.middleware.AuthenticationMiddleware'.
+2018-09-28 11:12:09,858 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 23, in process_request
+    ) % ("_CLASSES" if settings.MIDDLEWARE is None else "")
+AssertionError: The Django authentication middleware requires session middleware to be installed. Edit your MIDDLEWARE setting to insert 'django.contrib.sessions.middleware.SessionMiddleware' before 'django.contrib.auth.middleware.AuthenticationMiddleware'.
+2018-09-28 12:14:19,913 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 12:14:25,925 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 12:14:54,806 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 12:16:41,821 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 12:16:47,931 [django.request:93] [base:get_response] [WARNING]- Not Found: /admin
+2018-09-28 12:16:52,983 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 12:16:58,526 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 12:17:02,359 [django.request:93] [base:get_response] [WARNING]- Not Found: /xadmin
+2018-09-28 12:17:13,464 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 206, in inner
+    if not self.has_permission(request) and getattr(view, 'need_site_permission', True):
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 161, in has_permission
+    return request.user.is_active and request.user.is_staff
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2018-09-28 12:18:05,011 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/sites.py", line 207, in inner
+    return self.create_admin_view(self.login_view)(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/base.py", line 279, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/extra_apps/xadmin/views/website.py", line 66, in get
+    return login(request, **defaults)
+TypeError: login() got an unexpected keyword argument 'current_app'
+2018-09-28 12:24:41,815 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+2018-09-28 12:25:26,827 [HttpRunnerManager:54] [views:login] [INFO]- root ÁôªÂΩïÊàêÂäü
+2018-09-28 12:25:36,035 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html

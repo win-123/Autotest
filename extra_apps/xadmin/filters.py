@@ -5,7 +5,7 @@ from django.utils.encoding import smart_text
 from django.utils.translation import ugettext_lazy as _
 from django.utils import timezone
 from django.template.loader import get_template
-from django.template.context import Context
+# from django.template.context import Context
 from django.utils import six
 from django.utils.safestring import mark_safe
 from django.utils.html import escape, format_html
@@ -16,11 +16,11 @@ from xadmin.views.list import EMPTY_CHANGELIST_VALUE
 from xadmin.util import is_related_field, is_related_field2
 import datetime
 
-FILTER_PREFIX = '_p_'
-SEARCH_VAR = '_q_'
-
 from .util import (get_model_from_relation,
                    reverse_field_path, get_limit_choices_to_from_path, prepare_lookup_value)
+
+FILTER_PREFIX = '_p_'
+SEARCH_VAR = '_q_'
 
 
 class BaseFilter(object):

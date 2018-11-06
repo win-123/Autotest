@@ -791,3 +791,220 @@ Traceback (most recent call last):
   File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
 django.template.exceptions.TemplateDoesNotExist: registration/login.html
+2018-09-28 20:00:36,501 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login
+2018-09-28 20:00:38,728 [django.request:93] [base:get_response] [WARNING]- Not Found: /axadmin
+2018-09-28 20:08:31,059 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:10:17,968 [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-09-28 20:10:25,590 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:11:40,469 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:11:47,374 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:12:41,056 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-09-28 20:12:51,175 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-09-28 20:14:28,780 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 20:14:39,892 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-09-29 12:14:21,123 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-29 12:20:37,861 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-09-29 14:31:46,070 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-29 14:31:58,558 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-09-29 15:24:36,661 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-29 15:24:47,734 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-09-29 17:10:04,400 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:10:07,380 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:10:40,265 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:10:59,154 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:20:03,275 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-11-01 18:01:08,155 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-11-01 18:01:32,301 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-11-06 15:11:17,752 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-11-06 15:11:42,025 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-11-06 15:56:41,683 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/debugtalk/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'debugtalk'
+2018-11-06 16:00:21,147 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/periodictask/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'periodictask'
+2018-11-06 16:04:12,331 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/periodictask/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'periodictask'
+2018-11-06 16:04:15,581 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/periodictask/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'periodictask'
+2018-11-06 16:57:33,832 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 339, in project_list
+    ProjectInfo, filter_query, '/api/project_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 16:58:17,620 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 339, in project_list
+    ProjectInfo, filter_query, '/api/project_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 16:58:25,246 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 339, in project_list
+    ProjectInfo, filter_query, '/api/project_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 16:58:31,888 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 406, in test_list
+    TestCaseInfo, filter_query, '/api/test_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 17:02:12,966 [HttpRunnerManager:123] [views:log_out] [INFO]- root退出
+2018-11-06 17:02:22,394 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-11-06 17:02:26,714 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 406, in test_list
+    TestCaseInfo, filter_query, '/api/test_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'

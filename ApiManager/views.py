@@ -249,27 +249,27 @@ def run_test(request):
     }
     runner = HttpRunner(**kwargs)
 
-    testcase_dir_path = os.path.join(os.getcwd(), "suite")
-    testcase_dir_path = os.path.join(testcase_dir_path, get_time_stamp())
+    test_case_dir_path = os.path.join(os.getcwd(), "suite")
+    test_case_dir_path = os.path.join(test_case_dir_path, get_time_stamp())
 
     if request.is_ajax():
         kwargs = json.loads(request.body.decode('utf-8'))
-        id = kwargs.pop('id')
+        test_id = kwargs.pop('id')
         base_url = kwargs.pop('env_name')
-        type = kwargs.pop('type')
-        run_test_by_type(id, base_url, testcase_dir_path, type)
+        test_type = kwargs.pop('type')
+        run_test_by_type(test_id, base_url, test_case_dir_path, test_type)
         report_name = kwargs.get('report_name', None)
-        main_hrun.delay(testcase_dir_path, report_name)
+        main_hrun.delay(test_case_dir_path, report_name)
         return HttpResponse('用例执行中，请稍后查看报告即可,默认时间戳命名报告')
     else:
-        id = request.POST.get('id')
+        test_id = request.POST.get('id')
         base_url = request.POST.get('env_name')
-        type = request.POST.get('type', 'test')
+        test_type = request.POST.get('type', 'test')
 
-        run_test_by_type(id, base_url, testcase_dir_path, type)
-        runner.run(testcase_dir_path)
-        shutil.rmtree(testcase_dir_path)
-        runner.summary = timestamp_to_datetime(runner.summary,type=False)
+        run_test_by_type(test_id, base_url, test_case_dir_path, test_type)
+        runner.run(test_case_dir_path)
+        shutil.rmtree(test_case_dir_path)
+        runner.summary = timestamp_to_datetime(runner.summary, type=False)
 
         return render_to_response('report_template.html', runner.summary)
 
@@ -287,41 +287,41 @@ def run_batch_test(request):
     }
     runner = HttpRunner(**kwargs)
 
-    testcase_dir_path = os.path.join(os.getcwd(), "suite")
-    testcase_dir_path = os.path.join(testcase_dir_path, get_time_stamp())
+    test_case_dir_path = os.path.join(os.getcwd(), "suite")
+    test_case_dir_path = os.path.join(test_case_dir_path, get_time_stamp())
 
     if request.is_ajax():
         kwargs = json.loads(request.body.decode('utf-8'))
-        test_list = kwargs.pop('id')
+        test_id = kwargs.pop('id')
         base_url = kwargs.pop('env_name')
-        type = kwargs.pop('type')
+        test_type = kwargs.pop('type')
         report_name = kwargs.get('report_name', None)
-        run_by_batch(test_list, base_url, testcase_dir_path, type=type)
-        main_hrun.delay(testcase_dir_path, report_name)
+        run_by_batch(test_id, base_url, test_case_dir_path, type=test_type)
+        main_hrun.delay(test_case_dir_path, report_name)
         return HttpResponse('用例执行中，请稍后查看报告即可,默认时间戳命名报告')
     else:
-        type = request.POST.get('type', None)
+        test_type = request.POST.get('type', None)
         base_url = request.POST.get('env_name')
-        test_list = request.body.decode('utf-8').split('&')
-        if type:
-            run_by_batch(test_list, base_url, testcase_dir_path, type=type, mode=True)
+        test_code = request.body.decode('utf-8').split('&')
+        if test_type:
+            run_by_batch(test_code, base_url, test_case_dir_path, type=test_type, mode=True)
         else:
-            run_by_batch(test_list, base_url, testcase_dir_path)
+            run_by_batch(test_code, base_url, test_case_dir_path)
 
-        runner.run(testcase_dir_path)
+        runner.run(test_case_dir_path)
 
-        shutil.rmtree(testcase_dir_path)
+        shutil.rmtree(test_case_dir_path)
         runner.summary = timestamp_to_datetime(runner.summary, type=False)
 
         return render_to_response('report_template.html', runner.summary)
 
 
 @login_check
-def project_list(request, id):
+def project_list(request, pk):
     """
     项目列表
     :param request:
-    :param id: str or int：当前页
+    :param pk: str or int：当前页
     :return:
     """
 
@@ -336,7 +336,7 @@ def project_list(request, id):
     else:
         filter_query = set_filter_session(request)
         pro_list = get_pager_info(
-            ProjectInfo, filter_query, '/api/project_list/', id)
+            ProjectInfo, filter_query, '/api/project_list/', pk)
         manage_info = {
             'account': account,
             'project': pro_list[1],
@@ -350,11 +350,11 @@ def project_list(request, id):
 
 
 @login_check
-def module_list(request, id):
+def module_list(request, pk):
     """
     模块列表
     :param request:
-    :param id: str or int：当前页
+    :param pk: str or int：当前页
     :return:
     """
     account = request.session["now_account"]
@@ -368,7 +368,7 @@ def module_list(request, id):
     else:
         filter_query = set_filter_session(request)
         module_list = get_pager_info(
-            ModuleInfo, filter_query, '/api/module_list/', id)
+            ModuleInfo, filter_query, '/api/module_list/', pk)
         manage_info = {
             'account': account,
             'module': module_list[1],
@@ -382,11 +382,11 @@ def module_list(request, id):
 
 
 @login_check
-def test_list(request, id):
+def test_list(request, pk):
     """
     用例列表
     :param request:
-    :param id: str or int：当前页
+    :param pk: str or int：当前页
     :return:
     """
 
@@ -403,7 +403,7 @@ def test_list(request, id):
     else:
         filter_query = set_filter_session(request)
         test_list = get_pager_info(
-            TestCaseInfo, filter_query, '/api/test_list/', id)
+            TestCaseInfo, filter_query, '/api/test_list/', pk)
         manage_info = {
             'account': account,
             'test': test_list[1],
@@ -416,11 +416,11 @@ def test_list(request, id):
 
 
 @login_check
-def config_list(request, id):
+def config_list(request, pk):
     """
     配置列表
     :param request:
-    :param id: str or int：当前页
+    :param pk: str or int：当前页
     :return:
     """
     account = request.session["now_account"]
@@ -434,12 +434,12 @@ def config_list(request, id):
         return HttpResponse(get_ajax_msg(msg, 'ok'))
     else:
         filter_query = set_filter_session(request)
-        test_list = get_pager_info(
-            TestCaseInfo, filter_query, '/api/config_list/', id)
+        config_list = get_pager_info(
+            TestCaseInfo, filter_query, '/api/config_list/', pk)
         manage_info = {
             'account': account,
-            'test': test_list[1],
-            'page_list': test_list[0],
+            'test': config_list[1],
+            'page_list': config_list[0],
             'info': filter_query,
             'project': ProjectInfo.objects.all().order_by('-update_time')
         }
@@ -447,7 +447,7 @@ def config_list(request, id):
 
 
 @login_check
-def edit_case(request, id=None):
+def edit_case(request, pk=None):
     """
     编辑用例
     :param request:
@@ -457,11 +457,11 @@ def edit_case(request, id=None):
 
     account = request.session["now_account"]
     if request.is_ajax():
-        testcase_lists = json.loads(request.body.decode('utf-8'))
-        msg = case_info_logic(type=False, **testcase_lists)
+        test_case_lists = json.loads(request.body.decode('utf-8'))
+        msg = case_info_logic(type=False, **test_case_lists)
         return HttpResponse(get_ajax_msg(msg, '/api/test_list/1/'))
 
-    test_info = TestCaseInfo.objects.get_case_by_id(id)
+    test_info = TestCaseInfo.objects.get_case_by_id(pk)
     request = eval(test_info[0].request)
     include = eval(test_info[0].include)
     manage_info = {
@@ -475,21 +475,21 @@ def edit_case(request, id=None):
 
 
 @login_check
-def edit_config(request, id=None):
+def edit_config(request, pk=None):
     """
     编辑配置
     :param request:
-    :param id:
+    :param pk:
     :return:
     """
 
     account = request.session["now_account"]
     if request.is_ajax():
-        testconfig_lists = json.loads(request.body.decode('utf-8'))
-        msg = config_info_logic(type=False, **testconfig_lists)
+        test_config_lists = json.loads(request.body.decode('utf-8'))
+        msg = config_info_logic(type=False, **test_config_lists)
         return HttpResponse(get_ajax_msg(msg, '/api/config_list/1/'))
 
-    config_info = TestCaseInfo.objects.get_case_by_id(id)
+    config_info = TestCaseInfo.objects.get_case_by_id(pk)
     request = eval(config_info[0].request)
     manage_info = {
         'account': account,
@@ -541,11 +541,11 @@ def env_list(request, id):
 
 
 @login_check
-def report_list(request, id):
+def report_list(request, pk):
     """
     报告列表
     :param request:
-    :param id: str or int：当前页
+    :param pk: str or int：当前页
     :return:
     """
 
@@ -558,7 +558,7 @@ def report_list(request, id):
     else:
         filter_query = set_filter_session(request)
         report_list = get_pager_info(
-            TestReports, filter_query, '/api/report_list/', id)
+            TestReports, filter_query, '/api/report_list/', pk)
         manage_info = {
             'account': request.session["now_account"],
             'report': report_list[1],
@@ -569,23 +569,23 @@ def report_list(request, id):
 
 
 @login_check
-def view_report(request, id):
+def view_report(request, pk):
     """
     查看报告
     :param request:
-    :param id: str or int：报告名称索引
+    :param pk: str or int：报告名称索引
     :return:
     """
-    reports = TestReports.objects.get(id=id).reports
+    reports = TestReports.objects.get(id=pk).reports
     return render_to_response('view_report.html', {"reports": mark_safe(reports)})
 
 
 @login_check
-def periodictask(request, id):
+def periodictask(request, pk):
     """
     定时任务列表
     :param request:
-    :param id: str or int：当前页
+    :param pk: str or int：当前页
     :return:
     """
 
@@ -593,20 +593,20 @@ def periodictask(request, id):
     if request.is_ajax():
         kwargs = json.loads(request.body.decode('utf-8'))
         mode = kwargs.pop('mode')
-        id = kwargs.pop('id')
-        msg = delete_task(id) if mode == 'del' else change_task_status(id, mode)
+        task_id = kwargs.pop('id')
+        msg = delete_task(task_id) if mode == 'del' else change_task_status(task_id, mode)
         return HttpResponse(get_ajax_msg(msg, 'ok'))
     else:
         filter_query = set_filter_session(request)
         task_list = get_pager_info(
-            PeriodicTask, filter_query, '/api/periodictask/', id)
+            PeriodicTask, filter_query, '/api/periodictask/', pk)
         manage_info = {
             'account': account,
             'task': task_list[1],
             'page_list': task_list[0],
             'info': filter_query
         }
-    return render_to_response('periodictask_list.html', manage_info)
+    return render_to_response('periodic_task_list.html', manage_info)
 
 
 @login_check
@@ -684,10 +684,10 @@ def get_project_info(request):
 
 
 @login_check
-def download_report(request, id):
+def download_report(request, pk):
     if request.method == 'GET':
 
-        summary = TestReports.objects.get(id=id)
+        summary = TestReports.objects.get(id=pk)
         reports = summary.reports
         start_at = summary.start_at
 
@@ -715,42 +715,42 @@ def download_report(request, id):
 
 
 @login_check
-def debugtalk(request, id=None):
+def debugtalk(request, pk=None):
     if request.method == 'GET':
-        debugtalk = DebugTalk.objects.values('id', 'debugtalk').get(id=id)
-        return render_to_response('debugtalk.html', debugtalk)
+        debug_talk = DebugTalk.objects.values('id', 'debugtalk').get(id=pk)
+        return render_to_response('debug_talk.html', debug_talk)
     else:
-        id = request.POST.get('id')
-        debugtalk = request.POST.get('debugtalk')
-        code = debugtalk.replace('new_line', '\r\n')
-        obj = DebugTalk.objects.get(id=id)
-        obj.debugtalk = code
+        debug_talk_id = request.POST.get('id')
+        debug_talk = request.POST.get('debug_talk')
+        code = debug_talk.replace('new_line', '\r\n')
+        obj = DebugTalk.objects.get(id=debug_talk_id)
+        obj.debug_talk = code
         obj.save()
         return HttpResponseRedirect('/api/debugtalk_list/1/')
 
 
 @login_check
-def debugtalk_list(request, id):
+def debugtalk_list(request, pk):
     """
        debugtalk.py列表
        :param request:
-       :param id: str or int：当前页
+       :param pk: str or int：当前页
        :return:
        """
 
     account = request.session["now_account"]
-    debugtalk = get_pager_info(
-        DebugTalk, None, '/api/debugtalk_list/', id)
+    debug_talk = get_pager_info(
+        DebugTalk, None, '/api/debugtalk_list/', pk)
     manage_info = {
         'account': account,
-        'debugtalk': debugtalk[1],
-        'page_list': debugtalk[0],
+        'debugtalk': debug_talk[1],
+        'page_list': debug_talk[0],
     }
     return render_to_response('debugtalk_list.html', manage_info)
 
 
 @login_check
-def suite_list(request, id):
+def suite_list(request, pk):
     account = request.session["now_account"]
     if request.is_ajax():
         suite_info = json.loads(request.body.decode('utf-8'))
@@ -763,7 +763,7 @@ def suite_list(request, id):
     else:
         filter_query = set_filter_session(request)
         pro_list = get_pager_info(
-            TestSuite, filter_query, '/api/suite_list/', id)
+            TestSuite, filter_query, '/api/suite_list/', pk)
         manage_info = {
             'account': account,
             'suite': pro_list[1],
@@ -793,14 +793,14 @@ def add_suite(request):
 
 
 @login_check
-def edit_suite(request, id=None):
+def edit_suite(request, pk=None):
     account = request.session["now_account"]
     if request.is_ajax():
         kwargs = json.loads(request.body.decode('utf-8'))
         msg = edit_suite_data(**kwargs)
         return HttpResponse(get_ajax_msg(msg, '/api/suite_list/1/'))
 
-    suite_info = TestSuite.objects.get(id=id)
+    suite_info = TestSuite.objects.get(id=pk)
     manage_info = {
         'account': account,
         'info': suite_info,

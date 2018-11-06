@@ -17,10 +17,10 @@ from httprunner import HttpRunner, logger
 
 
 @shared_task
-def main_hrun(testset_path, report_name):
+def main_hrun(test_set_path, report_name):
     """
     用例运行
-    :param testset_path: dict or list
+    :param test_set_path: dict or list
     :param report_name: str
     :return:
     """
@@ -29,8 +29,8 @@ def main_hrun(testset_path, report_name):
         "failfast": False,
     }
     runner = HttpRunner(**kwargs)
-    runner.run(testset_path)
-    shutil.rmtree(testset_path)
+    runner.run(test_set_path)
+    shutil.rmtree(test_set_path)
 
     runner.summary = timestamp_to_datetime(runner.summary)
     report_path = add_test_reports(runner, report_name=report_name)
@@ -38,7 +38,7 @@ def main_hrun(testset_path, report_name):
 
 
 @shared_task
-def project_hrun(name, base_url, project, receiver):
+def project_hrun(env_name, base_url, project, receiver):
     """
     异步运行整个项目
     :param env_name: str: 环境地址
@@ -50,18 +50,18 @@ def project_hrun(name, base_url, project, receiver):
         "failfast": False,
     }
     runner = HttpRunner(**kwargs)
-    id = ProjectInfo.objects.get(project_name=project).id
+    pk = ProjectInfo.objects.get(project_name=project).id
 
-    testcase_dir_path = os.path.join(os.getcwd(), "suite")
-    testcase_dir_path = os.path.join(testcase_dir_path, get_time_stamp())
+    test_case_dir_path = os.path.join(os.getcwd(), "suite")
+    test_case_dir_path = os.path.join(test_case_dir_path, get_time_stamp())
 
-    run_by_project(id, base_url, testcase_dir_path)
+    run_by_project(pk, base_url, test_case_dir_path)
 
-    runner.run(testcase_dir_path)
-    shutil.rmtree(testcase_dir_path)
+    runner.run(test_case_dir_path)
+    shutil.rmtree(test_case_dir_path)
 
     runner.summary = timestamp_to_datetime(runner.summary)
-    report_path = add_test_reports(runner, report_name=name)
+    report_path = add_test_reports(runner, report_name=env_name)
 
     if receiver != '':
         send_email_reports(receiver, report_path)
@@ -69,7 +69,7 @@ def project_hrun(name, base_url, project, receiver):
 
 
 @shared_task
-def module_hrun(name, base_url, module, receiver):
+def module_hrun(env_name, base_url, module, receiver):
     """
     异步运行模块
     :param env_name: str: 环境地址
@@ -84,20 +84,20 @@ def module_hrun(name, base_url, module, receiver):
     runner = HttpRunner(**kwargs)
     module = list(module)
 
-    testcase_dir_path = os.path.join(os.getcwd(), "suite")
-    testcase_dir_path = os.path.join(testcase_dir_path, get_time_stamp())
+    test_case_dir_path = os.path.join(os.getcwd(), "suite")
+    test_case_dir_path = os.path.join(test_case_dir_path, get_time_stamp())
 
     try:
         for value in module:
-            run_by_module(value[0], base_url, testcase_dir_path)
+            run_by_module(value[0], base_url, test_case_dir_path)
     except ObjectDoesNotExist:
         return '找不到模块信息'
 
-    runner.run(testcase_dir_path)
+    runner.run(test_case_dir_path)
 
-    shutil.rmtree(testcase_dir_path)
+    shutil.rmtree(test_case_dir_path)
     runner.summary = timestamp_to_datetime(runner.summary)
-    report_path = add_test_reports(runner, report_name=name)
+    report_path = add_test_reports(runner, report_name=env_name)
 
     if receiver != '':
         send_email_reports(receiver, report_path)
@@ -105,7 +105,7 @@ def module_hrun(name, base_url, module, receiver):
 
 
 @shared_task
-def suite_hrun(name, base_url, suite, receiver):
+def suite_hrun(env_name, base_url, suite, receiver):
     """
     异步运行模块
     :param env_name: str: 环境地址
@@ -120,21 +120,21 @@ def suite_hrun(name, base_url, suite, receiver):
     runner = HttpRunner(**kwargs)
     suite = list(suite)
 
-    testcase_dir_path = os.path.join(os.getcwd(), "suite")
-    testcase_dir_path = os.path.join(testcase_dir_path, get_time_stamp())
+    test_case_dir_path = os.path.join(os.getcwd(), "suite")
+    test_case_dir_path = os.path.join(test_case_dir_path, get_time_stamp())
 
     try:
         for value in suite:
-            run_by_suite(value[0], base_url, testcase_dir_path)
+            run_by_suite(value[0], base_url, test_case_dir_path)
     except ObjectDoesNotExist:
         return '找不到Suite信息'
 
-    runner.run(testcase_dir_path)
+    runner.run(test_case_dir_path)
 
-    shutil.rmtree(testcase_dir_path)
+    shutil.rmtree(test_case_dir_path)
 
     runner.summary = timestamp_to_datetime(runner.summary)
-    report_path = add_test_reports(runner, report_name=name)
+    report_path = add_test_reports(runner, report_name=env_name)
 
     if receiver != '':
         send_email_reports(receiver, report_path)

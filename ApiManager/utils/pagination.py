@@ -5,7 +5,7 @@ from ApiManager.models import ModuleInfo, TestCaseInfo, TestSuite
 
 class PageInfo(object):
     """
-    分页类
+    分页管理类
     """
 
     def __init__(self, current, total_item, per_items=5):
@@ -41,6 +41,7 @@ def customer_pager(base_url, current_page, total_page):
     per_pager = 11
     middle_pager = 5
     start_pager = 1
+    current_page = int(current_page)
     if total_page <= per_pager:
         begin = 0
         end = total_page
@@ -74,10 +75,10 @@ def customer_pager(base_url, current_page, total_page):
             temp = "<li><a href='%s%d/'>%d</a></li>" % (base_url, i, i)
         pager_list.append(temp)
     if current_page >= total_page:
-        next = "<li><a href=''>>></a></li>"
+        next_page = "<li><a href=''>>></a></li>"
     else:
-        next = "<li><a href='%s%d/'>>></a></li>" % (base_url, current_page + start_pager)
-    pager_list.append(next)
+        next_page = "<li><a href='%s%d/'>>></a></li>" % (base_url, current_page + start_pager)
+    pager_list.append(next_page)
     if current_page >= total_page:
         last = "<li><a href='''>尾页</a></li>"
     else:
@@ -97,7 +98,7 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
     :param per_items: int: m默认展示12行
     :return:
     """
-    id = int(id)
+    pk = int(id)
     if filter_query:
         belong_project = filter_query.get('belong_project')
         belong_module = filter_query.get('belong_module')
@@ -158,10 +159,10 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
 
     total = obj.count()
 
-    page_info = PageInfo(id, total, per_items=per_items)
+    page_info = PageInfo(pk, total, per_items=per_items)
     info = obj[page_info.start:page_info.end]
 
-    sum = {}
+    total_num = {}
     page_list = ''
     if total != 0:
         if url == '/api/project_list/':
@@ -171,7 +172,8 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
                 suite_count = str(TestSuite.objects.filter(belong_project__project_name__exact=pro_name).count())
                 test_count = str(TestCaseInfo.objects.filter(belong_project__exact=pro_name, type__exact=1).count())
                 config_count = str(TestCaseInfo.objects.filter(belong_project__exact=pro_name, type__exact=2).count())
-                sum.setdefault(model.id, module_count + '/ ' + suite_count + '/' + test_count + '/ ' + config_count)
+                total_num.setdefault(
+                    model.id, module_count + '/ ' + suite_count + '/' + test_count + '/ ' + config_count)
 
         elif url == '/api/module_list/':
             for model in info:
@@ -181,7 +183,7 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
                                                              type__exact=1, belong_project=project_name).count())
                 config_count = str(TestCaseInfo.objects.filter(belong_module__module_name=module_name,
                                                                type__exact=2, belong_project=project_name).count())
-                sum.setdefault(model.id, test_count + '/ ' + config_count)
+                total_num.setdefault(model.id, test_count + '/ ' + config_count)
 
         elif url == '/api/suite_list/':
             for model in info:
@@ -189,8 +191,8 @@ def get_pager_info(Model, filter_query, url, id, per_items=12):
                 project_name = model.belong_project.project_name
                 test_count = str(len(eval(TestSuite.objects.get(suite_name=suite_name,
                                                                 belong_project__project_name=project_name).include)))
-                sum.setdefault(model.id, test_count)
+                total_num.setdefault(model.id, test_count)
 
         page_list = customer_pager(url, id, page_info.total_page)
 
-    return page_list, info, sum
+    return page_list, info, total_num

@@ -3,39 +3,50 @@ import io
 import json
 import logging
 import os
-import platform
+import yaml
+# import platform
 from json import JSONDecodeError
 
-import yaml
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Sum
 from djcelery.models import PeriodicTask
 
-from ApiManager.models import ModuleInfo, TestCaseInfo, TestReports, TestSuite
-from ApiManager.utils.operation import add_project_data, add_module_data, add_case_data, add_config_data, \
+from ApiManager.models import (
+    ModuleInfo,
+    TestCaseInfo,
+    TestReports,
+    TestSuite
+)
+from ApiManager.utils.operation import (
+    add_project_data,
+    add_module_data,
+    add_case_data,
+    add_config_data,
     add_register_data
+)
+
 from ApiManager.utils.task_opt import create_task
 
 
 logger = logging.getLogger('HttpRunnerManager')
 
 
-def type_change(type, value):
+def type_change(data_type, value):
     """
     数据类型转换
-    :param type: str: 类型
+    :param data_type: str: 类型
     :param value: object: 待转换的值
     :return: ok or error
     """
     try:
-        if type == 'float':
+        if data_type == 'float':
             value = float(value)
-        elif type == 'int':
+        elif data_type == 'int':
             value = int(value)
     except ValueError:
         logger.error('{value}转换{type}失败'.format(value=value, type=type))
         return 'exception'
-    if type == 'boolean':
+    if data_type == 'boolean':
         if value == 'False':
             value = False
         elif value == 'True':
@@ -68,21 +79,21 @@ def key_value_list(keyword, **kwargs):
                 key = value.pop('key')
                 val = value.pop('value')
                 if 'type' in value.keys():
-                    type = value.pop('type')
+                    data_type = value.pop('type')
                 else:
-                    type = 'str'
-                tips = '{keyword}: {val}格式错误,不是{type}类型'.format(keyword=keyword, val=val, type=type)
+                    data_type = 'str'
+                tips = '{keyword}: {val}格式错误,不是{type}类型'.format(keyword=keyword, val=val, type=data_type)
                 if key != '':
                     if keyword == 'validate':
                         value['check'] = key
-                        msg = type_change(type, val)
+                        msg = type_change(data_type, val)
                         if msg == 'exception':
                             return tips
                         value['expected'] = msg
                     elif keyword == 'extract':
                         value[key] = val
                     elif keyword == 'variables':
-                        msg = type_change(type, val)
+                        msg = type_change(data_type, val)
                         if msg == 'exception':
                             return tips
                         value[key] = msg
@@ -163,7 +174,7 @@ def load_testsuites(**kwargs):
     return string[:len(string) - 11]
 
 
-def load_cases(type=1, **kwargs):
+def load_cases(data_type=1, **kwargs):
     """
     加载指定项目模块下的用例
     :param kwargs: dict: 项目与模块信息
@@ -173,7 +184,7 @@ def load_cases(type=1, **kwargs):
     module = kwargs.get('name').get('module')
     if module == '请选择':
         return ''
-    case_info = TestCaseInfo.objects.filter(belong_project=belong_project, belong_module=module, type=type). \
+    case_info = TestCaseInfo.objects.filter(belong_project=belong_project, belong_module=module, type=data_type). \
         values_list('id', 'name').order_by('-create_time')
     case_info = list(case_info)
     string = ''
@@ -182,10 +193,10 @@ def load_cases(type=1, **kwargs):
     return string[:len(string) - 11]
 
 
-def module_info_logic(type=True, **kwargs):
+def module_info_logic(data_type=True, **kwargs):
     """
     模块信息逻辑处理
-    :param type: boolean: True:默认新增模块
+    :param data_type: boolean: True:默认新增模块
     :param kwargs: dict: 模块信息
     :return:
     """
@@ -195,13 +206,13 @@ def module_info_logic(type=True, **kwargs):
         return '请选择项目，没有请先添加哦'
     if kwargs.get('test_user') is '':
         return '测试人员不能为空'
-    return add_module_data(type, **kwargs)
+    return add_module_data(data_type, **kwargs)
 
 
-def project_info_logic(type=True, **kwargs):
+def project_info_logic(data_type=True, **kwargs):
     """
     项目信息逻辑处理
-    :param type: boolean:True 默认新增项目
+    :param data_type: boolean:True 默认新增项目
     :param kwargs: dict: 项目信息
     :return:
     """
@@ -216,7 +227,7 @@ def project_info_logic(type=True, **kwargs):
     if kwargs.get('publish_app') is '':
         return '发布应用不能为空'
 
-    return add_project_data(type, **kwargs)
+    return add_project_data(data_type, **kwargs)
 
 
 def case_info_logic(type=True, **kwargs):
@@ -610,21 +621,21 @@ def update_include(include):
                 'config': [id, name]
             }
         else:
-            id = include[i][0]
+            pk = include[i][0]
             source_name = include[i][1]
             try:
-                name = TestCaseInfo.objects.get(id=id).name
+                name = TestCaseInfo.objects.get(id=pk).name
             except ObjectDoesNotExist:
                 name = source_name + ' 已删除'
                 logger.warning('依赖的 {name} 用例/配置已经被删除啦！！'.format(name=source_name))
 
-            include[i] = [id, name]
+            include[i] = [pk, name]
 
     return include
 
 
-def timestamp_to_datetime(summary, type=True):
-    if not type:
+def timestamp_to_datetime(summary, data_type=True):
+    if not data_type:
         time_stamp = int(summary["time"]["start_at"])
         summary['time']['start_datetime'] = datetime.datetime. \
             fromtimestamp(time_stamp).strftime('%Y-%m-%d %H:%M:%S')
@@ -633,7 +644,7 @@ def timestamp_to_datetime(summary, type=True):
         try:
             time_stamp = int(detail['time']['start_at'])
             detail['time']['start_at'] = datetime.datetime.fromtimestamp(time_stamp).strftime('%Y-%m-%d %H:%M:%S')
-        except Exception:
+        except Exception :
             pass
 
         for record in detail['records']:
@@ -641,6 +652,6 @@ def timestamp_to_datetime(summary, type=True):
                 time_stamp = int(record['meta_data']['request']['start_timestamp'])
                 record['meta_data']['request']['start_timestamp'] = \
                     datetime.datetime.fromtimestamp(time_stamp).strftime('%Y-%m-%d %H:%M:%S')
-            except Exception:
+            except Exception :
                 pass
     return summary

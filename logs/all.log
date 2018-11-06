@@ -2177,3 +2177,490 @@ django.template.exceptions.TemplateDoesNotExist: registration/login.html
 2018-09-28 15:06:13,061 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
 2018-09-28 15:06:13,066 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
 2018-09-28 15:06:13,229 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 20:00:28,488 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3971
+2018-09-28 20:00:28,556 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/style.css HTTP/1.1" 200 1638
+2018-09-28 20:00:28,558 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-09-28 20:00:28,581 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/main_bg.png HTTP/1.1" 200 2801
+2018-09-28 20:00:28,601 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/fonts/icomoon.ttf?u4m6fy HTTP/1.1" 200 6900
+2018-09-28 20:00:36,501 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login
+2018-09-28 20:00:36,503 [django.server:124] [basehttp:log_message] [WARNING]- "GET /api/login HTTP/1.1" 404 2507
+2018-09-28 20:00:38,728 [django.request:93] [base:get_response] [WARNING]- Not Found: /axadmin
+2018-09-28 20:00:38,729 [django.server:124] [basehttp:log_message] [WARNING]- "GET /axadmin HTTP/1.1" 404 2501
+2018-09-28 20:00:43,105 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin HTTP/1.1" 301 0
+2018-09-28 20:00:43,285 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ HTTP/1.1" 200 4163
+2018-09-28 20:00:43,352 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-28 20:00:43,354 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-28 20:00:43,360 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-28 20:00:43,370 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-28 20:00:43,370 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-28 20:00:43,393 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-28 20:00:43,395 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 4170
+2018-09-28 20:00:43,458 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-28 20:08:25,597 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3971
+2018-09-28 20:08:31,059 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:08:31,061 [django.server:124] [basehttp:log_message] [WARNING]- "POST /api/login/ HTTP/1.1" 404 2515
+2018-09-28 20:10:17,900 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3971
+2018-09-28 20:10:17,968 [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-09-28 20:10:17,971 [django.server:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2513
+2018-09-28 20:10:25,590 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:10:25,592 [django.server:124] [basehttp:log_message] [WARNING]- "POST /api/login/ HTTP/1.1" 404 2511
+2018-09-28 20:11:36,576 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3971
+2018-09-28 20:11:40,469 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:11:40,470 [django.server:124] [basehttp:log_message] [WARNING]- "POST /api/login/ HTTP/1.1" 404 2511
+2018-09-28 20:11:47,374 [django.request:93] [base:get_response] [WARNING]- Not Found: /api/login/
+2018-09-28 20:11:47,375 [django.server:124] [basehttp:log_message] [WARNING]- "GET /api/login/ HTTP/1.1" 404 2510
+2018-09-28 20:12:35,653 [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 3971
+2018-09-28 20:12:41,090 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-09-28 20:12:41,100 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 3971
+2018-09-28 20:12:47,078 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 3971
+2018-09-28 20:12:51,193 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-09-28 20:12:51,206 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 3971
+2018-09-28 20:14:24,110 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 3971
+2018-09-28 20:14:28,780 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-28 20:14:28,781 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2366
+2018-09-28 20:14:33,546 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login HTTP/1.1" 301 0
+2018-09-28 20:14:33,845 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-09-28 20:14:39,907 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-09-28 20:14:40,010 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-09-28 20:14:40,068 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2018-09-28 20:14:40,071 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2018-09-28 20:14:40,072 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 20844
+2018-09-28 20:14:40,091 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13209
+2018-09-29 12:14:21,123 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-29 12:14:21,139 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2366
+2018-09-29 12:14:53,876 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-09-29 12:15:13,694 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 304 0
+2018-09-29 12:20:35,342 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-09-29 12:20:37,888 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-09-29 12:20:37,999 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-09-29 14:31:46,070 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-29 14:31:46,072 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2477
+2018-09-29 14:31:51,483 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-09-29 14:31:58,576 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-09-29 14:31:58,715 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-09-29 14:32:27,867 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/envinfo/ HTTP/1.1" 200 4182
+2018-09-29 14:32:28,024 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-29 14:32:28,029 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-29 14:32:28,032 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-29 14:32:28,034 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-29 14:32:28,034 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-29 14:32:28,035 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-29 14:32:28,107 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-29 14:32:28,139 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-29 14:32:28,167 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-29 14:32:28,169 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-29 14:32:28,170 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-29 14:32:28,210 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-29 14:32:28,213 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-29 14:32:28,214 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-29 14:32:28,223 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 4170
+2018-09-29 14:32:28,439 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-29 14:32:30,724 [django.server:124] [basehttp:log_message] [INFO]- "POST /xadmin/ApiManager/envinfo/ HTTP/1.1" 302 0
+2018-09-29 14:32:31,012 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/envinfo/ HTTP/1.1" 200 30301
+2018-09-29 14:32:31,043 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-29 14:32:31,058 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-29 14:32:31,062 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-29 14:32:31,069 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-29 14:32:31,077 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-29 14:32:31,098 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3569
+2018-09-29 14:32:31,113 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-29 14:32:31,119 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-29 14:32:31,121 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-29 14:32:31,123 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-29 14:32:31,128 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-29 14:32:31,129 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-29 14:32:31,138 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-29 14:32:31,168 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-29 14:32:31,170 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+2018-09-29 14:32:31,172 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+2018-09-29 14:32:31,172 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-29 14:32:31,172 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-29 14:32:31,181 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+2018-09-29 14:32:31,187 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+2018-09-29 14:32:31,188 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+2018-09-29 14:32:31,190 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+2018-09-29 14:32:31,418 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-29 14:33:10,374 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/ApiManager/projectinfo/ HTTP/1.1" 200 34889
+2018-09-29 14:33:10,422 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2018-09-29 14:33:10,433 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2018-09-29 14:33:10,434 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 37414
+2018-09-29 14:33:10,450 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8324
+2018-09-29 14:33:10,455 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2018-09-29 14:33:10,455 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2018-09-29 14:33:10,462 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3569
+2018-09-29 14:33:10,477 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2018-09-29 14:33:10,484 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2018-09-29 14:33:10,487 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+2018-09-29 14:33:10,490 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2018-09-29 14:33:10,495 [django.server:124] [basehttp:log_message] [INFO]- "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2018-09-29 14:33:10,496 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+2018-09-29 14:33:10,502 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2018-09-29 14:33:10,510 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+2018-09-29 14:33:10,512 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2018-09-29 14:33:10,518 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2018-09-29 14:33:10,529 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2018-09-29 14:33:10,530 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+2018-09-29 14:33:10,530 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4033
+2018-09-29 14:33:10,533 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+2018-09-29 14:33:10,534 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+2018-09-29 14:33:10,732 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2018-09-29 15:24:36,661 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-09-29 15:24:36,671 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2477
+2018-09-29 15:24:40,289 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-09-29 15:24:47,795 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-09-29 15:24:47,915 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-09-29 15:24:56,917 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 28271
+2018-09-29 15:25:01,547 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_module/ HTTP/1.1" 200 16149
+2018-09-29 15:25:17,824 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-09-29 15:25:21,262 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_project/ HTTP/1.1" 200 17486
+2018-09-29 17:10:04,400 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:10:04,570 [django.server:124] [basehttp:log_message] [ERROR]- "OPTIONS /api/user/register/ HTTP/1.1" 500 70555
+2018-09-29 17:10:07,380 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:10:07,434 [django.server:124] [basehttp:log_message] [ERROR]- "OPTIONS /api/user/register/ HTTP/1.1" 500 70555
+2018-09-29 17:10:40,265 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:10:40,314 [django.server:124] [basehttp:log_message] [ERROR]- "OPTIONS /api/user/register/ HTTP/1.1" 500 70555
+2018-09-29 17:10:59,154 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:10:59,200 [django.server:124] [basehttp:log_message] [ERROR]- "OPTIONS /api/user/register/ HTTP/1.1" 500 70555
+2018-09-29 17:20:03,275 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'user'
+2018-09-29 17:20:03,336 [django.server:124] [basehttp:log_message] [ERROR]- "OPTIONS /api/user/register/ HTTP/1.1" 500 70555
+2018-11-01 18:01:08,155 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-11-01 18:01:08,165 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2477
+2018-11-01 18:01:08,740 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-01 18:01:08,745 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-01 18:01:21,621 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login HTTP/1.1" 301 0
+2018-11-01 18:01:21,635 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-11-01 18:01:21,674 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/style.css HTTP/1.1" 200 1638
+2018-11-01 18:01:21,681 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-11-01 18:01:21,917 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/main_bg.png HTTP/1.1" 200 2801
+2018-11-01 18:01:21,927 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/fonts/icomoon.ttf?u4m6fy HTTP/1.1" 200 6900
+2018-11-01 18:01:32,321 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-11-01 18:01:32,386 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-01 18:01:32,440 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/common.css HTTP/1.1" 200 1004
+2018-11-01 18:01:32,441 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/css/admin.css HTTP/1.1" 200 19660
+2018-11-01 18:01:32,448 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/commons.js HTTP/1.1" 200 13209
+2018-11-01 18:01:32,451 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/js/app.js HTTP/1.1" 200 20844
+2018-11-01 18:01:39,847 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-11-01 18:02:02,488 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 172506
+2018-11-01 18:03:11,877 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-01 18:03:12,476 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:03:19,210 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/8/ HTTP/1.1" 200 51071
+2018-11-01 18:03:21,775 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:03:31,329 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 81092
+2018-11-01 18:03:46,701 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:03:52,591 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 49248
+2018-11-01 18:04:27,756 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13706
+2018-11-01 18:04:31,329 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 2640
+2018-11-01 18:04:51,216 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-01 18:04:51,623 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:05:04,500 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 49248
+2018-11-01 18:06:31,788 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:06:38,051 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 42293
+2018-11-01 18:06:58,719 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:07:04,128 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/1/ HTTP/1.1" 200 41596
+2018-11-01 18:07:19,431 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:07:25,196 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 40305
+2018-11-01 18:07:41,726 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:07:45,709 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/3/ HTTP/1.1" 200 42230
+2018-11-01 18:07:51,894 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:07:58,316 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 39713
+2018-11-01 18:10:33,801 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:10:37,082 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13706
+2018-11-01 18:10:39,415 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 2640
+2018-11-01 18:11:04,031 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/debugtalk/ HTTP/1.1" 302 0
+2018-11-01 18:11:04,063 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13706
+2018-11-01 18:11:09,407 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-01 18:11:09,757 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:11:17,391 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 39713
+2018-11-01 18:11:33,375 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:11:34,866 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 49248
+2018-11-01 18:11:42,672 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:11:47,252 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 42290
+2018-11-01 18:12:11,108 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:12:16,894 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-11-01 18:12:22,455 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-01 18:12:22,810 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:12:24,219 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 49248
+2018-11-01 18:12:38,276 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:12:40,783 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 49248
+2018-11-01 18:21:10,642 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-11-01 18:21:15,254 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13706
+2018-11-01 18:21:29,969 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-11-01 18:21:38,856 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 171400
+2018-11-01 18:27:00,400 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-01 18:27:00,958 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:27:08,625 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_case/2/ HTTP/1.1" 200 49248
+2018-11-01 18:37:28,245 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-01 18:37:28,688 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:37:37,340 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 42290
+2018-11-01 18:37:46,625 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:37:55,412 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/run_test/ HTTP/1.1" 200 81092
+2018-11-01 18:38:14,822 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-01 18:38:58,396 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/edit_config/5/ HTTP/1.1" 200 27646
+2018-11-06 15:11:17,752 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-11-06 15:11:17,755 [django.server:124] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2477
+2018-11-06 15:11:29,183 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login HTTP/1.1" 301 0
+2018-11-06 15:11:29,207 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-11-06 15:11:29,298 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/style.css HTTP/1.1" 200 1638
+2018-11-06 15:11:29,300 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/bg.jpeg HTTP/1.1" 200 338866
+2018-11-06 15:11:29,330 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/main_bg.png HTTP/1.1" 200 2801
+2018-11-06 15:11:29,338 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/iconfont/fonts/icomoon.ttf?u4m6fy HTTP/1.1" 200 6900
+2018-11-06 15:11:42,063 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-11-06 15:11:42,173 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-06 15:18:35,028 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-06 15:18:36,424 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 15:18:36,436 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 15:26:05,119 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-06 15:56:36,503 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 28271
+2018-11-06 15:56:38,034 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 15:56:39,027 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk_list/1/ HTTP/1.1" 200 13706
+2018-11-06 15:56:41,683 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/debugtalk/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'debugtalk'
+2018-11-06 15:56:41,764 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/debugtalk/1/ HTTP/1.1" 500 71558
+2018-11-06 15:57:58,120 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/debugtalk/1/ HTTP/1.1" 200 3303
+2018-11-06 15:57:58,668 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 15:57:58,674 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 15:59:52,635 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-11-06 15:59:55,424 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_project/ HTTP/1.1" 200 17486
+2018-11-06 15:59:58,301 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/module_list/1/ HTTP/1.1" 200 28271
+2018-11-06 16:00:00,714 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_module/ HTTP/1.1" 200 16149
+2018-11-06 16:00:05,565 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_case/ HTTP/1.1" 200 34141
+2018-11-06 16:00:08,096 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-06 16:00:09,101 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-06 16:00:11,726 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_config/ HTTP/1.1" 200 24517
+2018-11-06 16:00:14,107 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/config_list/1/ HTTP/1.1" 200 21041
+2018-11-06 16:00:14,975 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-06 16:00:18,627 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/suite_list/1/ HTTP/1.1" 200 23155
+2018-11-06 16:00:21,147 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/periodictask/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'periodictask'
+2018-11-06 16:00:21,281 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/periodictask/1/ HTTP/1.1" 500 71614
+2018-11-06 16:03:19,936 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/periodictask/1/ HTTP/1.1" 200 16271
+2018-11-06 16:03:20,453 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 16:03:20,463 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 16:03:25,138 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/report_list/1/ HTTP/1.1" 200 14398
+2018-11-06 16:03:29,161 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/env_list/1/ HTTP/1.1" 200 19684
+2018-11-06 16:04:12,331 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/periodictask/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'periodictask'
+2018-11-06 16:04:12,533 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/periodictask/1/ HTTP/1.1" 500 71589
+2018-11-06 16:04:12,973 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 16:04:12,980 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 16:04:15,581 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/periodictask/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 12, in process
+    fun = getattr(view, fun)
+AttributeError: module 'ApiManager.views' has no attribute 'periodictask'
+2018-11-06 16:04:15,845 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/periodictask/1/ HTTP/1.1" 500 71589
+2018-11-06 16:04:16,285 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 16:04:16,294 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 16:05:51,263 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/periodictask/1/ HTTP/1.1" 200 16271
+2018-11-06 16:05:52,382 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 16:05:52,407 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 16:09:30,722 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/periodictask/1/ HTTP/1.1" 200 16271
+2018-11-06 16:09:50,024 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 16:09:50,034 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 16:09:57,143 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/periodictask/1/ HTTP/1.1" 200 16271
+2018-11-06 16:09:57,689 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 16:09:57,719 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 16:10:15,127 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-06 16:57:31,221 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-06 16:57:33,832 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 339, in project_list
+    ProjectInfo, filter_query, '/api/project_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 16:57:33,983 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/project_list/1/ HTTP/1.1" 500 91337
+2018-11-06 16:58:17,620 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 339, in project_list
+    ProjectInfo, filter_query, '/api/project_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 16:58:17,681 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/project_list/1/ HTTP/1.1" 500 91471
+2018-11-06 16:58:17,822 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 16:58:17,834 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 16:58:25,246 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/project_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 339, in project_list
+    ProjectInfo, filter_query, '/api/project_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 16:58:25,319 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/project_list/1/ HTTP/1.1" 500 91336
+2018-11-06 16:58:31,888 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 406, in test_list
+    TestCaseInfo, filter_query, '/api/test_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 16:58:31,956 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 90672
+2018-11-06 17:02:10,034 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-06 17:02:12,971 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/log_out/ HTTP/1.1" 302 0
+2018-11-06 17:02:12,978 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/login/ HTTP/1.1" 200 3971
+2018-11-06 17:02:22,403 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/login/ HTTP/1.1" 302 0
+2018-11-06 17:02:22,484 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/index/ HTTP/1.1" 200 18309
+2018-11-06 17:02:26,714 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test_list/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 406, in test_list
+    TestCaseInfo, filter_query, '/api/test_list/', pk)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 195, in get_pager_info
+    page_list = customer_pager(url, id, page_info.total_page)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
+    if current_page <= start_pager:
+TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 17:02:26,892 [django.server:124] [basehttp:log_message] [ERROR]- "GET /api/test_list/1/ HTTP/1.1" 500 90672
+2018-11-06 17:07:15,358 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-06 17:07:16,981 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-06 17:07:17,077 [django.server:124] [basehttp:log_message] [INFO]- "GET /favicon.ico HTTP/1.1" 302 0
+2018-11-06 17:07:17,133 [django.server:124] [basehttp:log_message] [INFO]- "GET /static/assets/img/favicon.ico HTTP/1.1" 200 67646
+2018-11-06 17:07:20,954 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-06 17:07:21,292 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-06 17:07:23,651 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-11-06 17:07:28,212 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/project_list/1/ HTTP/1.1" 200 29416
+2018-11-06 17:07:30,539 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/test_list/1/ HTTP/1.1" 200 36943
+2018-11-06 17:07:30,888 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0
+2018-11-06 17:07:35,484 [django.server:124] [basehttp:log_message] [INFO]- "GET /api/add_config/ HTTP/1.1" 200 24517
+2018-11-06 17:07:38,439 [django.server:124] [basehttp:log_message] [INFO]- "POST /api/add_case/ HTTP/1.1" 200 0

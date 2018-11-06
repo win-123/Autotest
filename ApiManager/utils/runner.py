@@ -2,7 +2,13 @@ import os
 
 from django.core.exceptions import ObjectDoesNotExist
 
-from ApiManager.models import TestCaseInfo, ModuleInfo, ProjectInfo, DebugTalk, TestSuite
+from ApiManager.models import (
+    TestCaseInfo,
+    ModuleInfo,
+    ProjectInfo,
+    DebugTalk,
+    TestSuite
+)
 from ApiManager.utils.testcase import dump_python_file, dump_yaml_file
 
 
@@ -21,14 +27,15 @@ def run_by_single(index, base_url, path):
             }
         }
     }
-    testcase_list = []
 
-    testcase_list.append(config)
+    test_case_list = []
+
+    test_case_list.append(config)
 
     try:
         obj = TestCaseInfo.objects.get(id=index)
     except ObjectDoesNotExist:
-        return testcase_list
+        return test_case_list
 
     include = eval(obj.include)
     request = eval(obj.request)
@@ -38,22 +45,21 @@ def run_by_single(index, base_url, path):
 
     config['config']['name'] = name
 
-    testcase_dir_path = os.path.join(path, project)
+    test_case_dir_path = os.path.join(path, project)
 
-    if not os.path.exists(testcase_dir_path):
-        os.makedirs(testcase_dir_path)
+    if not os.path.exists(test_case_dir_path):
+        os.makedirs(test_case_dir_path)
 
         try:
             debugtalk = DebugTalk.objects.get(belong_project__project_name=project).debugtalk
         except ObjectDoesNotExist:
             debugtalk = ''
+        dump_python_file(os.path.join(test_case_dir_path, 'debugtalk.py'), debugtalk)
 
-        dump_python_file(os.path.join(testcase_dir_path, 'debugtalk.py'), debugtalk)
+    test_case_dir_path = os.path.join(test_case_dir_path, module)
 
-    testcase_dir_path = os.path.join(testcase_dir_path, module)
-
-    if not os.path.exists(testcase_dir_path):
-        os.mkdir(testcase_dir_path)
+    if not os.path.exists(test_case_dir_path):
+        os.mkdir(test_case_dir_path)
 
     for test_info in include:
         try:
@@ -62,19 +68,19 @@ def run_by_single(index, base_url, path):
                 config_request = eval(TestCaseInfo.objects.get(id=config_id).request)
                 config_request.get('config').get('request').setdefault('base_url', base_url)
                 config_request['config']['name'] = name
-                testcase_list[0] = config_request
+                test_case_list[0] = config_request
             else:
-                id = test_info[0]
-                pre_request = eval(TestCaseInfo.objects.get(id=id).request)
-                testcase_list.append(pre_request)
+                pk = test_info[0]
+                pre_request = eval(TestCaseInfo.objects.get(id=pk).request)
+                test_case_list.append(pre_request)
 
         except ObjectDoesNotExist:
-            return testcase_list
+            return test_case_list
 
     if request['test']['request']['url'] != '':
-        testcase_list.append(request)
+        test_case_list.append(request)
 
-    dump_yaml_file(os.path.join(testcase_dir_path, name + '.yml'), testcase_list)
+    dump_yaml_file(os.path.join(test_case_dir_path, name + '.yml'), test_case_list)
 
 
 def run_by_suite(index, base_url, path):
@@ -84,7 +90,6 @@ def run_by_suite(index, base_url, path):
 
     for val in include:
         run_by_single(val[0], base_url, path)
-
 
 
 def run_by_batch(test_list, base_url, path, type=None, mode=False):
@@ -142,14 +147,14 @@ def run_by_module(id, base_url, path):
         run_by_single(index[0], base_url, path)
 
 
-def run_by_project(id, base_url, path):
+def run_by_project(pk, base_url, path):
     """
     组装项目用例
-    :param id: int or str：项目索引
+    :param pk: int or str：项目索引
     :param base_url: 环境地址
     :return: list
     """
-    obj = ProjectInfo.objects.get(id=id)
+    obj = ProjectInfo.objects.get(id=pk)
     module_index_list = ModuleInfo.objects.filter(belong_project=obj).values_list('id')
     for index in module_index_list:
         module_id = index[0]

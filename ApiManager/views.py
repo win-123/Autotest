@@ -86,7 +86,7 @@ def login(request):
         username = request.POST.get('account')
         password = request.POST.get('password')
         if UserInfo.objects.filter(username__exact=username).filter(password__exact=password).count() == 1:
-            logger.info('{username} 登录成功'.format(username=username))
+            logger.info('{username} 欢迎回来 ！'.format(username=username))
             request.session["login_status"] = True
             request.session["now_account"] = username
             return HttpResponseRedirect('/api/index/')
@@ -133,14 +133,14 @@ def log_out(request):
 @login_check
 def index(request):
     """
-    首页
+    首页展示
     :param request:
     :return:
     """
-    project_length = ProjectInfo.objects.count()
-    module_length = ModuleInfo.objects.count()
-    test_length = TestCaseInfo.objects.filter(type__exact=1).count()
-    suite_length = TestSuite.objects.count()
+    project_length = ProjectInfo.objects.count()  # 项目数量
+    module_length = ModuleInfo.objects.count()  # 模块数量
+    test_length = TestCaseInfo.objects.filter(type__exact=1).count()  # 测试用例数
+    suite_length = TestSuite.objects.count()  # 用例集合数
 
     total = get_total_values()
     manage_info = {
@@ -163,7 +163,7 @@ def add_project(request):
     :param request:
     :return:
     """
-    account = request.session["now_account"]
+    account = request.session["now_account"]  # 当前用户
     if request.is_ajax():
         project_info = json.loads(request.body.decode('utf-8'))
         msg = project_info_logic(**project_info)
@@ -249,6 +249,7 @@ def run_test(request):
     }
     runner = HttpRunner(**kwargs)
 
+    # 测试用例的路径
     test_case_dir_path = os.path.join(os.getcwd(), "suite")
     test_case_dir_path = os.path.join(test_case_dir_path, get_time_stamp())
 
@@ -269,7 +270,7 @@ def run_test(request):
         run_test_by_type(test_id, base_url, test_case_dir_path, test_type)
         runner.run(test_case_dir_path)
         shutil.rmtree(test_case_dir_path)
-        runner.summary = timestamp_to_datetime(runner.summary, type=False)
+        runner.summary = timestamp_to_datetime(runner.summary, data_type=False)
 
         return render_to_response('report_template.html', runner.summary)
 
@@ -311,7 +312,7 @@ def run_batch_test(request):
         runner.run(test_case_dir_path)
 
         shutil.rmtree(test_case_dir_path)
-        runner.summary = timestamp_to_datetime(runner.summary, type=False)
+        runner.summary = timestamp_to_datetime(runner.summary, data_type=False)
 
         return render_to_response('report_template.html', runner.summary)
 

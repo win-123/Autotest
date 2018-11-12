@@ -6,8 +6,16 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.db import DataError
 
 from ApiManager import separator
-from ApiManager.models import ProjectInfo, ModuleInfo, TestCaseInfo, UserInfo, EnvInfo, TestReports, DebugTalk, \
+from ApiManager.models import (
+    ProjectInfo,
+    ModuleInfo,
+    TestCaseInfo,
+    UserInfo,
+    EnvInfo,
+    TestReports,
+    DebugTalk,
     TestSuite
+)
 
 
 logger = logging.getLogger('HttpRunnerManager')
@@ -16,18 +24,19 @@ logger = logging.getLogger('HttpRunnerManager')
 def add_register_data(**kwargs):
     """
     用户注册信息逻辑判断及落地
-    :param kwargs: dict
-    :return: ok or tips
+    :param kwargs:
+    :return:
     """
     user_info = UserInfo.objects
     try:
         username = kwargs.pop('account')
         password = kwargs.pop('password')
         email = kwargs.pop('email')
-
+        # 判断用户名是否存在
         if user_info.filter(username__exact=username).filter(status=1).count() > 0:
             logger.debug('{username} 已被其他用户注册'.format(username=username))
-            return '该用户名已被注册，请更换用户名'
+            return '用户名已被注册 ！'
+        # 判断邮箱是否存在
         if user_info.filter(email__exact=email).filter(status=1).count() > 0:
             logger.debug('{email} 昵称已被其他用户注册'.format(email=email))
             return '邮箱已被其他用户注册，请更换邮箱'
@@ -67,7 +76,8 @@ def add_project_data(type, **kwargs):
                 'index')) and project_opt.get_pro_name(project_name) > 0:
             return '该项目已存在， 请重新命名'
         try:
-            project_opt.update_project(kwargs.pop('index'), **kwargs)  # testcaseinfo的belong_project也得更新，这个字段设计的有点坑了
+            # testcaseinfo的belong_project也得更新，这个字段设计的有点坑了
+            project_opt.update_project(kwargs.pop('index'), **kwargs)
         except DataError:
             return '项目信息过长'
         except Exception:
@@ -126,9 +136,6 @@ def add_module_data(type, **kwargs):
     return 'ok'
 
 
-'''用例数据落地'''
-
-
 def add_case_data(type, **kwargs):
     """
     用例信息落地
@@ -166,9 +173,6 @@ def add_case_data(type, **kwargs):
         logger.error('用例信息：{kwargs}过长！！'.format(kwargs=kwargs))
         return '字段长度超长，请重新编辑'
     return 'ok'
-
-
-'''配置数据落地'''
 
 
 def add_config_data(type, **kwargs):
@@ -221,13 +225,13 @@ def add_suite_data(**kwargs):
 
 
 def edit_suite_data(**kwargs):
-    id = kwargs.pop('id')
+    pk = kwargs.pop('id')
     project_name = kwargs.pop('project')
     suite_name = kwargs.get('suite_name')
     include = kwargs.pop('include')
     belong_project = ProjectInfo.objects.get(project_name=project_name)
 
-    suite_obj = TestSuite.objects.get(id=id)
+    suite_obj = TestSuite.objects.get(id=pk)
     try:
         if suite_name != suite_obj.suite_name and \
                 TestSuite.objects.filter(belong_project=belong_project, suite_name=suite_name).count() > 0:
@@ -242,19 +246,16 @@ def edit_suite_data(**kwargs):
     return 'ok'
 
 
-'''环境信息落地'''
-
-
 def env_data_logic(**kwargs):
     """
     环境信息逻辑判断及落地
     :param kwargs: dict
     :return: ok or tips
     """
-    id = kwargs.get('id', None)
-    if id:
+    pk = kwargs.get('id', None)
+    if pk:
         try:
-            EnvInfo.objects.delete_env(id)
+            EnvInfo.objects.delete_env(pk)
         except ObjectDoesNotExist:
             return '删除异常，请重试'
         return 'ok'
@@ -296,30 +297,30 @@ def env_data_logic(**kwargs):
             return '更新失败，请重试'
 
 
-def del_module_data(id):
+def del_module_data(pk):
     """
     根据模块索引删除模块数据，强制删除其下所有用例及配置
-    :param id: str or int:模块索引
+    :param pk: str or int:模块索引
     :return: ok or tips
     """
     try:
-        module_name = ModuleInfo.objects.get_module_name('', type=False, id=id)
+        module_name = ModuleInfo.objects.get_module_name('', type=False, id=pk)
         TestCaseInfo.objects.filter(belong_module__module_name=module_name).delete()
-        ModuleInfo.objects.get(id=id).delete()
+        ModuleInfo.objects.get(id=pk).delete()
     except ObjectDoesNotExist:
         return '删除异常，请重试'
     logging.info('{module_name} 模块已删除'.format(module_name=module_name))
     return 'ok'
 
 
-def del_project_data(id):
+def del_project_data(pk):
     """
     根据项目索引删除项目数据，强制删除其下所有用例、配置、模块、Suite
-    :param id: str or int: 项目索引
+    :param pk: str or int: 项目索引
     :return: ok or tips
     """
     try:
-        project_name = ProjectInfo.objects.get_pro_name('', type=False, id=id)
+        project_name = ProjectInfo.objects.get_pro_name('', type=False, id=pk)
 
         belong_modules = ModuleInfo.objects.filter(belong_project__project_name=project_name).values_list('module_name')
         for obj in belong_modules:
@@ -331,7 +332,7 @@ def del_project_data(id):
 
         DebugTalk.objects.filter(belong_project__project_name=project_name).delete()
 
-        ProjectInfo.objects.get(id=id).delete()
+        ProjectInfo.objects.get(id=pk).delete()
 
     except ObjectDoesNotExist:
         return '删除异常，请重试'
@@ -339,56 +340,56 @@ def del_project_data(id):
     return 'ok'
 
 
-def del_test_data(id):
+def del_test_data(pk):
     """
     根据用例或配置索引删除数据
-    :param id: str or int: test or config index
+    :param pk: str or int: test or config index
     :return: ok or tips
     """
     try:
-        TestCaseInfo.objects.get(id=id).delete()
+        TestCaseInfo.objects.get(id=pk).delete()
     except ObjectDoesNotExist:
         return '删除异常，请重试'
     logging.info('用例/配置已删除')
     return 'ok'
 
 
-def del_suite_data(id):
+def del_suite_data(pk):
     """
     根据Suite索引删除数据
-    :param id: str or int: test or config index
+    :param pk: str or int: test or config index
     :return: ok or tips
     """
     try:
-        TestSuite.objects.get(id=id).delete()
+        TestSuite.objects.get(id=pk).delete()
     except ObjectDoesNotExist:
         return '删除异常，请重试'
     logging.info('Suite已删除')
     return 'ok'
 
 
-def del_report_data(id):
+def del_report_data(pk):
     """
     根据报告索引删除报告
-    :param id:
+    :param pk:
     :return: ok or tips
     """
     try:
-        TestReports.objects.get(id=id).delete()
+        TestReports.objects.get(id=pk).delete()
     except ObjectDoesNotExist:
         return '删除异常，请重试'
     return 'ok'
 
 
-def copy_test_data(id, name):
+def copy_test_data(pk, name):
     """
     复制用例信息，默认插入到当前项目、莫夸
-    :param id: str or int: 复制源
+    :param pk: str or int: 复制源
     :param name: str：新用例名称
     :return: ok or tips
     """
     try:
-        test = TestCaseInfo.objects.get(id=id)
+        test = TestCaseInfo.objects.get(id=pk)
         belong_module = test.belong_module
     except ObjectDoesNotExist:
         return '复制异常，请重试'
@@ -407,15 +408,15 @@ def copy_test_data(id, name):
     return 'ok'
 
 
-def copy_suite_data(id, name):
+def copy_suite_data(pk, name):
     """
     复制suite信息，默认插入到当前项目、莫夸
-    :param id: str or int: 复制源
+    :param pk: str or int: 复制源
     :param name: str：新用例名称
     :return: ok or tips
     """
     try:
-        suite = TestSuite.objects.get(id=id)
+        suite = TestSuite.objects.get(id=pk)
         belong_project = suite.belong_project
     except ObjectDoesNotExist:
         return '复制异常，请重试'
@@ -431,18 +432,21 @@ def copy_suite_data(id, name):
 def add_test_reports(runner, report_name=None):
     """
     定时任务或者异步执行报告信息落地
-    :param start_at: time: 开始时间
-    :param report_name: str: 报告名称，为空默认时间戳命名
-    :param kwargs: dict: 报告结果值
+    :param runner:
+    :param report_name:报告名称，为空默认时间戳命名
     :return:
     """
+
     time_stamp = int(runner.summary["time"]["start_at"])
     runner.summary['time']['start_datetime'] = datetime.datetime.fromtimestamp(time_stamp).strftime('%Y-%m-%d %H:%M:%S')
     report_name = report_name if report_name else runner.summary['time']['start_datetime']
     runner.summary['html_report_name'] = report_name
 
-    report_path = os.path.join(os.getcwd(), "reports{}{}.html".format(separator, int(runner.summary['time']['start_at'])))
-    runner.gen_html_report(html_report_template=os.path.join(os.getcwd(), "templates{}extent_report_template.html".format(separator)))
+    report_path = os.path.join(
+        os.getcwd(), "reports{}{}.html".format(separator, int(runner.summary['time']['start_at'])))
+    runner.gen_html_report(
+        html_report_template=os.path.join(os.getcwd(), "templates{}extent_report_template.html".format(separator))
+    )
 
     with open(report_path, encoding='utf-8') as stream:
         reports = stream.read()

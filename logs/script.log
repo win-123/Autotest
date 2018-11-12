@@ -1008,3 +1008,80 @@ Traceback (most recent call last):
   File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/pagination.py", line 58, in customer_pager
     if current_page <= start_pager:
 TypeError: '<=' not supported between instances of 'str' and 'int'
+2018-11-06 19:04:36,828 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-11-06 19:05:02,701 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-11-06 19:08:52,558 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-11-06 19:09:09,297 [HttpRunnerManager:89] [views:login] [INFO]- root 登录成功
+2018-11-07 10:21:45,870 [HttpRunnerManager:89] [views:login] [INFO]- root 欢迎回来 ！
+2018-11-07 10:22:16,844 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 273, in run_test
+    runner.summary = timestamp_to_datetime(runner.summary, type=False)
+TypeError: timestamp_to_datetime() got an unexpected keyword argument 'type'
+2018-11-07 10:23:16,537 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 273, in run_test
+    runner.summary = timestamp_to_datetime(runner.summary, test_type=False)
+TypeError: timestamp_to_datetime() got an unexpected keyword argument 'test_type'
+2018-11-09 11:38:48,559 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-11-09 11:39:05,193 [HttpRunnerManager:89] [views:login] [INFO]- root 欢迎回来 ！
+2018-11-09 11:52:34,502 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}, {'comparator': 'equals', 'check': 'content.msg', 'expected': '购物车中该套餐已更新成功.'}]}}
+2018-11-09 11:54:31,948 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}, {'comparator': 'equals', 'check': 'content.msg', 'expected': '购物车中该套餐已更新成功.'}]}}
+2018-11-09 11:54:44,065 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/edit_config/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 498, in edit_config
+    'request': request['config'],
+KeyError: 'config'
+2018-11-09 11:54:44,235 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/edit_config/1/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 498, in edit_config
+    'request': request['config'],
+KeyError: 'config'
+2018-11-09 11:54:56,795 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}, {'comparator': 'equals', 'check': 'content.msg', 'expected': '购物车中该套餐已更新成功.'}]}}
+2018-11-09 11:56:07,461 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}, {'comparator': 'equals', 'check': 'content.data.status', 'expected': '更新成功'}]}}
+2018-11-09 11:57:08,164 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}, {'comparator': 'equals', 'check': 'content.data.status', 'expected': '添加成功.'}]}}
+2018-11-09 11:57:58,756 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 10}, {'comparator': 'equals', 'check': 'content.msg', 'expected': '购物车中该套餐已更新成功.'}]}}
+2018-11-09 12:01:22,200 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 获取购物车列表用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/list/', 'method': 'GET', 'headers': {'cookie': '$(get_test_token())'}}, 'name': '获取购物车列表', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}], 'extract': [{'cookie': '$(get_test_token())'}]}}
+2018-11-09 12:02:31,712 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 10}, {'comparator': 'equals', 'check': 'content.data.status', 'expected': '添加成功.'}]}}
+2018-11-09 12:03:42,215 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}, {'comparator': 'equals', 'check': 'content.data.status', 'expected': '添加成功.'}]}}
+2018-11-12 16:34:53,291 [HttpRunnerManager:89] [views:login] [INFO]- root 欢迎回来 ！

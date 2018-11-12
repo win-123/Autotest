@@ -1391,7 +1391,7 @@ msgstr "Django Xadmin"
 
 #: .\views\base.py:321
 msgid "my-company.inc"
-msgstr "我的公司"
+msgstr "Jack-win"
 
 #: .\views\dashboard.py:189
 msgid "Widget ID"

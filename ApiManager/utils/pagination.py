@@ -38,7 +38,7 @@ def customer_pager(base_url, current_page, total_page):
     :param total_page: 总共页
     :return: html
     """
-    per_pager = 11
+    per_pager = 11  # 每页显示条数
     middle_pager = 5
     start_pager = 1
     current_page = int(current_page)

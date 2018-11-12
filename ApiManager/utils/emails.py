@@ -2,10 +2,23 @@ import io
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from HttpRunnerManager.settings import EMAIL_SEND_USERNAME, EMAIL_SEND_PASSWORD
+from HttpRunnerManager.settings import(
+    EMAIL_SEND_USERNAME,
+    EMAIL_SEND_PASSWORD
+)
+
+#######################
+#     邮件处理         #
+#######################
 
 
 def send_email_reports(receiver, html_report_path):
+    """
+    邮件处理
+    :param receiver:
+    :param html_report_path:
+    :return:
+    """
     if '@sina.com' in EMAIL_SEND_USERNAME:
         smtp_server = 'smtp.sina.com'
     elif '@163.com' in EMAIL_SEND_USERNAME:

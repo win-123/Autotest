@@ -44,7 +44,7 @@ def type_change(data_type, value):
         elif data_type == 'int':
             value = int(value)
     except ValueError:
-        logger.error('{value}转换{type}失败'.format(value=value, type=type))
+        logger.error('{value}转换{type}失败'.format(value=value, type=data_type))
         return 'exception'
     if data_type == 'boolean':
         if value == 'False':
@@ -63,6 +63,7 @@ def key_value_list(keyword, **kwargs):
     :param kwargs: dict: 待转换的字典
     :return: ok or tips
     """
+
     if not isinstance(kwargs, dict) or not kwargs:
         return None
     else:
@@ -216,39 +217,76 @@ def project_info_logic(data_type=True, **kwargs):
     :param kwargs: dict: 项目信息
     :return:
     """
-    if kwargs.get('project_name') is '':
-        return '项目名称不能为空'
-    if kwargs.get('responsible_name') is '':
-        return '负责人不能为空'
-    if kwargs.get('test_user') is '':
-        return '测试人员不能为空'
-    if kwargs.get('dev_user') is '':
-        return '开发人员不能为空'
-    if kwargs.get('publish_app') is '':
-        return '发布应用不能为空'
+    dic = {
+        "project_name": {
+            "error_val": "",
+            "error_msg": "项目名称不能为空"
+        },
+        "responsible_name": {
+            "error_val": "",
+            "error_msg": "负责人不能为空"
+        },
+        "test_user": {
+            "error_val": "",
+            "error_msg": "测试人员不能为空"
+        },
+        "dev_user": {
+            "error_val": "",
+            "error_msg": "开发人员不能为空"
+        },
+        "publish_app": {
+            "error_val": "",
+            "error_msg": "发布应用不能为空"
+        },
+    }
+
+    for k, v in dic.items():
+        if kwargs.get(k) == v["error_val"]:
+            return v["error_msg"]
 
     return add_project_data(data_type, **kwargs)
 
 
-def case_info_logic(type=True, **kwargs):
+def case_info_logic(case_type=True, **kwargs):
     """
     用例信息逻辑处理以数据处理
-    :param type: boolean: True 默认新增用例信息， False: 更新用例
+    :param case_type: boolean: True 默认新增用例信息， False: 更新用例
     :param kwargs: dict: 用例信息
     :return: str: ok or tips
     """
     test = kwargs.pop('test')
-    '''
-        动态展示模块
-    '''
+
+    dic = {
+        "case_name": {
+            "error_val": "",
+            "error_msg": "项目名称不能为空"
+        },
+        "module": {
+            "error_val": "",
+            "error_msg": "负责人不能为空"
+        },
+        "project": {
+            "error_val": "",
+            "error_msg": "测试人员不能为空"
+        },
+        "dev_user": {
+            "error_val": "",
+            "error_msg": "开发人员不能为空"
+        },
+        "publish_app": {
+            "error_val": "",
+            "error_msg": "发布应用不能为空"
+        },
+    }
+    # 动态展示模块
     if 'request' not in test.keys():
-        type = test.pop('type')
-        if type == 'module':
+        case_type = test.pop('type')
+        if case_type == 'module':
             return load_modules(**test)
-        elif type == 'case':
+        elif case_type == 'case':
             return load_cases(**test)
         else:
-            return load_cases(type=2, **test)
+            return load_cases(case_type=2, **test)
 
     else:
         logging.info('用例原始信息: {kwargs}'.format(kwargs=kwargs))
@@ -609,16 +647,16 @@ def get_total_values():
 def update_include(include):
     for i in range(0, len(include)):
         if isinstance(include[i], dict):
-            id = include[i]['config'][0]
+            pk = include[i]['config'][0]
             source_name = include[i]['config'][1]
             try:
-                name = TestCaseInfo.objects.get(id=id).name
+                name = TestCaseInfo.objects.get(id=pk).name
             except ObjectDoesNotExist:
                 name = source_name+'_已删除!'
                 logger.warning('依赖的 {name} 用例/配置已经被删除啦！！'.format(name=source_name))
 
             include[i] = {
-                'config': [id, name]
+                'config': [pk, name]
             }
         else:
             pk = include[i][0]

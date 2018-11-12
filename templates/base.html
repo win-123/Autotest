@@ -4,6 +4,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {#    定义标题#}
     <title>{% block title %}{% endblock %}</title>
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
@@ -87,9 +88,8 @@
     </div>
 </div>
 <div class="am-cf admin-main">
-
+{#    左侧的侧边栏#}
     <div class="nav-navicon admin-main admin-sidebar">
-
 
         <div class="sideMenu am-icon-dashboard" style="color:#aeb2b7; margin: 10px 0 0 0;"> 欢迎您：{{ account }} &nbsp;&nbsp;<a
                 href='/api/log_out/'>注 销</a></div>
@@ -131,13 +131,13 @@
             <h3 class="am-icon-gears"><em></em> <a href="#">系统设置</a></h3>
             <ul>
                 <li><a href="/api/env_list/1/">运 行 环 境</a></li>
-                <li><a href="http://192.168.91.45:5555/dashboard">任 务 监 控</a></li>
+                <li><a href="http://192.168.0.10:5555/dashboard">任 务 监 控</a></li>
               {% comment %}  <li><a href="/api/echo/">实验室</a></li>{% endcomment %}
             </ul>
         </div>
         <!-- sideMenu End -->
     </div>
-
+    {#    导航栏#}
     <div class="daohang">
         <ul>
             <li>

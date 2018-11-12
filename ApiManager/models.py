@@ -22,8 +22,8 @@ class BaseTable(models.Model):
 
 class UserType(BaseTable):
 
-    type_name = models.CharField(max_length=20)
-    type_desc = models.CharField(max_length=50)
+    type_name = models.CharField('类型名', max_length=20)
+    type_desc = models.CharField('类型描述', max_length=50)
     objects = UserTypeManager()
 
     class Meta:
@@ -32,11 +32,15 @@ class UserType(BaseTable):
 
 
 class UserInfo(BaseTable):
+    status_choices = (
+        (1, '有效'),
+        (2, '无效'),
+    )
 
     username = models.CharField('用户名', max_length=20, unique=True, null=False)
     password = models.CharField('密码', max_length=20, null=False)
     email = models.EmailField('邮箱', null=False, unique=True)
-    status = models.IntegerField('有效/无效', default=1)
+    status = models.IntegerField('有效/无效', default=1, choices=status_choices)
     # user_type = models.ForeignKey(UserType, on_delete=models.CASCADE)
     objects = UserInfoManager()
 
@@ -91,7 +95,7 @@ class TestCaseInfo(BaseTable):
 
 
 class TestReports(BaseTable):
-    report_name = models.CharField(max_length=40, null=False)
+    report_name = models.CharField(max_length=40, null=False, verbose_name='报告名')
     start_at = models.CharField(max_length=40, null=True)
     status = models.BooleanField()
     testsRun = models.IntegerField()
@@ -104,9 +108,9 @@ class TestReports(BaseTable):
 
 
 class EnvInfo(BaseTable):
-    env_name = models.CharField(max_length=40, null=False, unique=True)
-    base_url = models.CharField(max_length=40, null=False)
-    simple_desc = models.CharField(max_length=50, null=False)
+    env_name = models.CharField(max_length=40, null=False, unique=True, verbose_name='环境名')
+    base_url = models.CharField(max_length=40, null=False, verbose_name='网站')
+    simple_desc = models.CharField(max_length=50, null=False, verbose_name='环境描述')
     objects = EnvInfoManager()
 
     class Meta:
@@ -124,6 +128,9 @@ class DebugTalk(BaseTable):
 
 
 class TestSuite(BaseTable):
+    """
+    用例集合
+    """
     belong_project = models.ForeignKey(ProjectInfo, on_delete=models.CASCADE)
     suite_name = models.CharField(max_length=100, null=False)
     include = models.TextField(null=False)

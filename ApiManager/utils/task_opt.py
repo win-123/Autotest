@@ -4,7 +4,7 @@ from djcelery import models as celery_models
 
 
 def create_task(name, task, task_args, crontab_time, desc):
-    '''
+    """
     新增定时任务
     :param name: 定时任务名称
     :param task: 对应tasks里已有的task
@@ -12,7 +12,7 @@ def create_task(name, task, task_args, crontab_time, desc):
     :param crontab_time: 时间配置
     :param desc: 定时任务描述
     :return: ok
-    '''
+    """
     # task任务， created是否定时创建
     task, created = celery_models.PeriodicTask.objects.get_or_create(name=name, task=task)
     # 获取 crontab

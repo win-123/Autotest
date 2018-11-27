@@ -247,37 +247,37 @@ def project_info_logic(data_type=True, **kwargs):
     return add_project_data(data_type, **kwargs)
 
 
-def case_info_logic(case_type=True, **kwargs):
+def case_info_logic(type=True, **kwargs):
     """
     用例信息逻辑处理以数据处理
-    :param case_type: boolean: True 默认新增用例信息， False: 更新用例
+    :param type: boolean: True 默认新增用例信息， False: 更新用例
     :param kwargs: dict: 用例信息
     :return: str: ok or tips
     """
     test = kwargs.pop('test')
 
-    dic = {
-        "case_name": {
-            "error_val": "",
-            "error_msg": "项目名称不能为空"
-        },
-        "module": {
-            "error_val": "",
-            "error_msg": "负责人不能为空"
-        },
-        "project": {
-            "error_val": "",
-            "error_msg": "测试人员不能为空"
-        },
-        "dev_user": {
-            "error_val": "",
-            "error_msg": "开发人员不能为空"
-        },
-        "publish_app": {
-            "error_val": "",
-            "error_msg": "发布应用不能为空"
-        },
-    }
+    # dic = {
+    #     "case_name": {
+    #         "error_val": "",
+    #         "error_msg": "项目名称不能为空"
+    #     },
+    #     "module": {
+    #         "error_val": "",
+    #         "error_msg": "负责人不能为空"
+    #     },
+    #     "project": {
+    #         "error_val": "",
+    #         "error_msg": "测试人员不能为空"
+    #     },
+    #     "dev_user": {
+    #         "error_val": "",
+    #         "error_msg": "开发人员不能为空"
+    #     },
+    #     "publish_app": {
+    #         "error_val": "",
+    #         "error_msg": "发布应用不能为空"
+    #     },
+    # }
     # 动态展示模块
     if 'request' not in test.keys():
         case_type = test.pop('type')

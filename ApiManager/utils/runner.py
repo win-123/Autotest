@@ -67,6 +67,7 @@ def run_by_single(index, base_url, path):
                 config_id = test_info.pop('config')[0]
                 config_request = eval(TestCaseInfo.objects.get(id=config_id).request)
                 config_request.get('config').get('request').setdefault('base_url', base_url)
+                # config_request.get('request').setdefault('base_url', base_url)
                 config_request['config']['name'] = name
                 test_case_list[0] = config_request
             else:

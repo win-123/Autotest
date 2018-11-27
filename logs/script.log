@@ -1085,3 +1085,177 @@ KeyError: 'config'
 2018-11-09 12:02:31,712 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 10}, {'comparator': 'equals', 'check': 'content.data.status', 'expected': '添加成功.'}]}}
 2018-11-09 12:03:42,215 [HttpRunnerManager:163] [operation:add_case_data] [INFO]- 添加购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId ': '46', 'validPeriodId ': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}, {'comparator': 'equals', 'check': 'content.data.status', 'expected': '添加成功.'}]}}
 2018-11-12 16:34:53,291 [HttpRunnerManager:89] [views:login] [INFO]- root 欢迎回来 ！
+2018-11-13 11:07:07,498 [HttpRunnerManager:89] [views:login] [INFO]- root 欢迎回来 ！
+2018-11-13 11:12:29,552 [HttpRunnerManager:71] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': '免费课程', 'responsible_name': 'jack', 'test_user': 'jack', 'dev_user': 'root', 'publish_app': '免费课程', 'simple_desc': '', 'other_desc': ''}
+2018-11-13 11:13:06,246 [HttpRunnerManager:117] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '免费课程', 'test_user': 'jack', 'simple_desc': '', 'other_desc': '', 'belong_project': <ProjectInfo: ProjectInfo object (2)>}
+2018-11-13 11:15:49,907 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 获取课程列表用例添加成功: {'test': {'request': {'url': 'api/v1/course_sub/category/list/', 'method': 'GET'}, 'name': '获取课程列表'}}
+2018-11-13 11:23:05,466 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 课程详情的右侧列表用例添加成功: {'test': {'request': {'url': '/api/v1/course/5/right/', 'method': 'GET'}, 'name': '课程详情的右侧列表'}}
+2018-11-13 11:24:13,620 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 课程头部信息用例添加成功: {'test': {'request': {'url': '/api/v1/course/5/top/', 'method': 'GET'}, 'name': '课程头部信息'}}
+2018-11-13 11:26:06,728 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 课程支付信息用例添加成功: {'test': {'request': {'url': '/api/v1/course/5/payment_info/', 'method': 'GET'}, 'name': '课程支付信息'}}
+2018-11-13 11:26:56,195 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 课程详情用例添加成功: {'test': {'request': {'url': '/api/v1/course/5/detail/', 'method': 'GET'}, 'name': '课程详情'}}
+2018-11-13 11:28:33,319 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 免费课程用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '免费课程'}}
+2018-11-13 11:30:02,651 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/edit_case/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 462, in edit_case
+    msg = case_info_logic(type=False, **test_case_lists)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/common.py", line 363, in case_info_logic
+    return add_case_data(type, **kwargs)
+TypeError: add_case_data() got multiple values for argument 'type'
+2018-11-13 11:30:07,656 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/edit_case/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 462, in edit_case
+    msg = case_info_logic(type=False, **test_case_lists)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/common.py", line 363, in case_info_logic
+    return add_case_data(type, **kwargs)
+TypeError: add_case_data() got multiple values for argument 'type'
+2018-11-13 11:31:32,447 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/edit_case/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 462, in edit_case
+    msg = case_info_logic(type=False, **test_case_lists)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/common.py", line 363, in case_info_logic
+    return add_case_data(case_type, **kwargs)
+TypeError: add_case_data() got multiple values for argument 'type'
+2018-11-13 11:33:12,881 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程详情用例更新成功: {'test': {'request': {'url': '/api/v1/course/5/detail/', 'method': 'GET'}, 'name': '课程详情', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:33:41,578 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程支付信息用例更新成功: {'test': {'request': {'url': '/api/v1/course/5/payment_info/', 'method': 'GET'}, 'name': '课程支付信息', 'validate': [{'comparator': 'equals', 'check': 'case_type', 'expected': 0}]}}
+2018-11-13 11:34:16,484 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程头部信息用例更新成功: {'test': {'request': {'url': '/api/v1/course/5/top/', 'method': 'GET'}, 'name': '课程头部信息', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:34:34,837 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程支付信息用例更新成功: {'test': {'request': {'url': '/api/v1/course/5/payment_info/', 'method': 'GET'}, 'name': '课程支付信息', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:34:59,438 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程详情的右侧列表用例更新成功: {'test': {'request': {'url': '/api/v1/course/5/right/', 'method': 'GET'}, 'name': '课程详情的右侧列表', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:35:24,755 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 获取课程列表用例更新成功: {'test': {'request': {'url': 'api/v1/course_sub/category/list/', 'method': 'GET'}, 'name': '获取课程列表', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:40:23,671 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 课程章节用例添加成功: {'test': {'request': {'url': '/api/v1/course/5/sections/', 'method': 'GET'}, 'name': '课程章节', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:43:04,044 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 添加到购物车用例添加成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST'}, 'name': '添加到购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:43:51,417 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/debugtalk/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 726, in debugtalk
+    code = debug_talk.replace('new_line', '\r\n')
+AttributeError: 'NoneType' object has no attribute 'replace'
+2018-11-13 11:51:41,684 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 课程购买用例添加成功: {'test': {'request': {'url': '/api/v1/order/confirm/', 'method': 'POST'}, 'name': '课程购买', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 11:59:52,019 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 添加到购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST'}, 'name': '添加到购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}], 'extract': [{'cookie': '$(get_test_token())'}]}}
+2018-11-13 12:00:14,526 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程购买用例更新成功: {'test': {'request': {'url': '/api/v1/order/confirm/', 'method': 'POST'}, 'name': '课程购买', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}], 'extract': [{'cookie': '$(get_test_token())'}]}}
+2018-11-13 12:01:15,432 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 免费课程用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '免费课程'}}
+2018-11-13 12:01:22,520 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 270, in run_test
+    run_test_by_type(test_id, base_url, test_case_dir_path, test_type)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/runner.py", line 220, in run_test_by_type
+    dispatch_dic.get(model, run_by_single)(pk, base_url, path)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/runner.py", line 69, in run_by_single
+    config_request.get('config').get('request').setdefault('base_url', base_url)
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-11-13 12:02:17,129 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 270, in run_test
+    run_test_by_type(test_id, base_url, test_case_dir_path, test_type)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/runner.py", line 220, in run_test_by_type
+    dispatch_dic.get(model, run_by_single)(pk, base_url, path)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/runner.py", line 69, in run_by_single
+    config_request.get('config').get('request').setdefault('base_url', base_url)
+AttributeError: 'NoneType' object has no attribute 'get'
+2018-11-13 13:40:06,081 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/run_test/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 270, in run_test
+    run_test_by_type(test_id, base_url, test_case_dir_path, test_type)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/runner.py", line 221, in run_test_by_type
+    dispatch_dic.get(model, run_by_single)(pk, base_url, path)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/utils/runner.py", line 70, in run_by_single
+    config_request.get('request').setdefault('base_url', base_url)
+AttributeError: 'NoneType' object has no attribute 'setdefault'
+2018-11-13 13:42:45,458 [HttpRunnerManager:193] [operation:add_config_data] [INFO]- 免费课程,用户信息配置添加成功: {'config': {'request': {}, 'name': '免费课程,用户信息'}}
+2018-11-13 13:44:56,840 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/edit_config/17/
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/lisa/Documents/AutoTest/venv-http/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/HttpRunnerManager/activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 74, in wrapper
+    return func(request, *args, **kwargs)
+  File "/Users/lisa/Documents/AutoTest/HttpRunnerManager/ApiManager/views.py", line 498, in edit_config
+    'request': request['config'],
+KeyError: 'config'
+2018-11-13 13:46:13,063 [HttpRunnerManager:202] [operation:add_config_data] [INFO]- 免费课程用户信息配置配置更新成功: {'config': {'request': {}, 'name': '免费课程用户信息配置'}}
+2018-11-13 13:46:52,055 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 免费课程用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '免费课程'}}
+2018-11-13 13:48:09,812 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 购物车测试用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'courseId': '5', 'validPeriodId': '90'}, 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '购物车测试', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 10}, {'comparator': 'equals', 'check': 'content.msg', 'expected': '购物车中该套餐已更新成功.'}]}}
+2018-11-13 15:18:28,451 [HttpRunnerManager:158] [operation:add_case_data] [INFO]- 免费课程用例集用例添加成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '免费课程用例集'}}
+2018-11-13 15:20:10,297 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 免费课程用例集用例更新成功: {'test': {'request': {'url': '', 'method': 'POST'}, 'name': '免费课程用例集'}}
+2018-11-13 15:48:20,409 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程购买用例更新成功: {'test': {'request': {'url': '/api/v1/order/confirm/', 'method': 'POST', 'data': {'cookie': '$(get_test_token())'}}, 'name': '课程购买', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}], 'extract': [{'cookie': '$(get_test_token())'}]}}
+2018-11-13 15:48:35,769 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 添加到购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'cookie': '$(get_test_token())'}}, 'name': '添加到购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}], 'extract': [{'cookie': '$(get_test_token())'}]}}
+2018-11-13 15:54:08,573 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 添加到购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'data': {'cookie': '$(get_test_token())'}, 'headers': {'access_token': '$(get_test_token())'}}, 'name': '添加到购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 15:54:40,184 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 添加到购物车用例更新成功: {'test': {'request': {'url': '/api/v1/user/shop_cart/create/', 'method': 'POST', 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '添加到购物车', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 15:55:01,759 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程购买用例更新成功: {'test': {'request': {'url': '/api/v1/order/confirm/', 'method': 'POST', 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '课程购买', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}], 'extract': [{'cookie': '$(get_test_token())'}]}}
+2018-11-13 15:55:43,102 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程购买用例更新成功: {'test': {'request': {'url': '/api/v1/order/confirm/', 'method': 'POST', 'headers': {'Cookie.access_token': '$(get_test_token())'}}, 'name': '课程购买', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 15:59:40,172 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程购买用例更新成功: {'test': {'request': {'url': '/api/v1/order/confirm/', 'method': 'POST', 'headers': {'Cookie.token': '$(get_test_token())'}}, 'name': '课程购买', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-13 16:01:09,532 [HttpRunnerManager:167] [operation:add_case_data] [INFO]- 课程购买用例更新成功: {'test': {'request': {'url': '/api/v1/order/confirm/', 'method': 'POST', 'data': {'username': 'szww', 'password': 'root123456'}, 'headers': {'Cookie.token': '$(get_test_token())'}}, 'name': '课程购买', 'validate': [{'comparator': 'equals', 'check': 'content.error_no', 'expected': 0}]}}
+2018-11-14 10:07:00,023 [HttpRunnerManager:89] [views:login] [INFO]- root 欢迎回来 ！

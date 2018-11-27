@@ -88,9 +88,6 @@ def add_project_data(type, **kwargs):
     return 'ok'
 
 
-'''模块数据落地'''
-
-
 def add_module_data(type, **kwargs):
     """
     模块信息落地

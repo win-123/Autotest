@@ -26,11 +26,14 @@ checkbox = forms.CheckboxInput({'class': 'action-select'}, lambda value: False)
 
 def action_checkbox(obj):
     return checkbox.render(ACTION_CHECKBOX_NAME, force_text(obj.pk))
+
+
 action_checkbox.short_description = mark_safe(
     '<input type="checkbox" id="action-toggle" />')
 action_checkbox.allow_tags = True
 action_checkbox.allow_export = False
 action_checkbox.is_column = False
+
 
 class BaseActionView(ModelAdminView):
     action_name = None
@@ -70,7 +73,8 @@ class DeleteSelectedAction(BaseActionView):
         n = queryset.count()
         if n:
             if self.delete_models_batch:
-                self.log('delete', _('Batch delete %(count)d %(items)s.') % { "count": n, "items": model_ngettext(self.opts, n) })
+                self.log('delete', _('Batch delete %(count)d %(items)s.') %
+                         {"count": n, "items": model_ngettext(self.opts, n)})
                 queryset.delete()
             else:
                 for obj in queryset:

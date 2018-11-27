@@ -722,7 +722,7 @@ def debugtalk(request, pk=None):
         return render_to_response('debug_talk.html', debug_talk)
     else:
         debug_talk_id = request.POST.get('id')
-        debug_talk = request.POST.get('debug_talk')
+        debug_talk = request.POST.get('debugtalk')
         code = debug_talk.replace('new_line', '\r\n')
         obj = DebugTalk.objects.get(id=debug_talk_id)
         obj.debug_talk = code

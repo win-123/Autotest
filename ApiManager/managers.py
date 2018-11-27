@@ -1,37 +1,53 @@
 from django.db import models
 
-'''用户类型表操作'''
-
 
 class UserTypeManager(models.Manager):
+    """
+    用户类型表操作
+    """
     def insert_user_type(self, user_type):
+        """
+        添加用户类型
+        :param user_type:
+        :return:
+        """
         self.create(user_type=user_type)
 
     def insert_type_name(self, type_name):
+        """
+        添加类型名
+        :param type_name:
+        :return:
+        """
         self.create(type_name=type_name)
 
     def insert_type_desc(self, type_desc):
+        """
+        类型描述
+        :param type_desc:
+        :return:
+        """
         self.create(type_desc=type_desc)
 
     def get_objects(self, user_type_id):  # 根据user_type得到一条数据
         return self.get(user_type_id=user_type_id)
 
 
-'''用户信息表操作'''
-
-
 class UserInfoManager(models.Manager):
-    def insert_user(self, username, password, email, object):
+    """
+    用户信息表操作
+    """
+    def insert_user(self, username, password, email, object):  # 创建用户
         self.create(username=username, password=password, email=email, user_type=object)
 
-    def query_user(self, username, password):
+    def query_user(self, username, password):  #
         return self.filter(username__exact=username, password__exact=password).count()
 
 
-'''项目信息表操作'''
-
-
 class ProjectInfoManager(models.Manager):
+    """
+    项目信息表操作
+    """
     def insert_project(self, **kwargs):
         self.create(**kwargs)
 
@@ -61,10 +77,10 @@ class ProjectInfoManager(models.Manager):
             return self.all()
 
 
-'''模块信息表操作'''
-
-
 class ModuleInfoManager(models.Manager):
+    """
+    模块信息表操作
+    """
     def insert_module(self, **kwargs):
         self.create(**kwargs)
 
@@ -87,11 +103,10 @@ class ModuleInfoManager(models.Manager):
                 return self.get(id=module_name)
 
 
-
-'''用例信息表操作'''
-
-
 class TestCaseInfoManager(models.Manager):
+    """
+    用例信息表操作
+    """
     def insert_case(self, belong_module, **kwargs):
         case_info = kwargs.get('test').pop('case_info')
         self.create(name=kwargs.get('test').get('name'), belong_project=case_info.pop('project'),
@@ -99,6 +114,12 @@ class TestCaseInfoManager(models.Manager):
                     author=case_info.pop('author'), include=case_info.pop('include'), request=kwargs)
 
     def update_case(self, belong_module, **kwargs):
+        """
+        更新操作
+        :param belong_module:
+        :param kwargs:
+        :return:
+        """
         case_info = kwargs.get('test').pop('case_info')
         obj = self.get(id=case_info.pop('test_index'))
         obj.belong_project = case_info.pop('project')
@@ -136,10 +157,10 @@ class TestCaseInfoManager(models.Manager):
             return self.get(id=index).name
 
 
-'''环境变量管理'''
-
-
 class EnvInfoManager(models.Manager):
+    """
+    环境变量管理
+    """
     def insert_env(self, **kwargs):
         self.create(**kwargs)
 
